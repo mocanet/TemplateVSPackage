@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="MocaBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+	<PropertyGroup>
+		<MocaBuildConfigurationName Condition=" '$(MocaBuildConfigurationName)' == '' ">$(ConfigurationName)</MocaBuildConfigurationName>
+		<ConfigDir>.\Config\</ConfigDir>
+
+		<TConfigDir>$(TargetDir)Config\</TConfigDir>
+		<TDbConfig>$(TConfigDir)db.config</TDbConfig>
+		<TLog4netConfig>$(TConfigDir)log4net.config</TLog4netConfig>
+		<TMocaConfig>$(TConfigDir)Moca.config</TMocaConfig>
+	</PropertyGroup>
+
+	<Choose>
+		<When Condition=" '$(MocaBuildConfigurationName)' == 'Main' ">
+			<PropertyGroup>
+				<DbConfig>$(ConfigDir)db.config</DbConfig>
+				<Log4netConfig>$(ConfigDir)log4net.config</Log4netConfig>
+				<MocaConfig>$(ConfigDir)Moca.config</MocaConfig>
+			</PropertyGroup>
+		</When>
+		<Otherwise>
+			<PropertyGroup>
+				<DbConfig>$(ConfigDir)db.$(MocaBuildConfigurationName).config</DbConfig>
+				<Log4netConfig>$(ConfigDir)log4net.$(MocaBuildConfigurationName).config</Log4netConfig>
+				<MocaConfig>$(ConfigDir)Moca.$(MocaBuildConfigurationName).config</MocaConfig>
+			</PropertyGroup>
+		</Otherwise>
+	</Choose>
+
+	<!-- Config File Copy	-->
+	<Target Name="MocaBuild" DependsOnTargets="" Condition="">
+		<MakeDir Condition=" Exist('$(TConfigDir)') == '' "
+				 Directories="$(TConfigDir)" />
+
+		<Copy SourceFiles="$(DbConfig)" DestinationFiles="$(TDbConfig)" OverwriteReadOnlyFiles="true" />
+		<Copy SourceFiles="$(Log4netConfig)" DestinationFiles="$(TLog4netConfig)" OverwriteReadOnlyFiles="true" />
+		<Copy SourceFiles="$(MocaConfig)" DestinationFiles="$(TMocaConfig)" OverwriteReadOnlyFiles="true" />
+	</Target>
+
+	<!-- WebApp Publish	-->
+	<Target Name="PublishToFileSystem" DependsOnTargets="PipelinePreDeployCopyAllFilesToOneFolder;PublishDestinationClean">
+		<Error Condition="'$(PublishDestination)'==''" Text="The PublishDestination property must be set to the intended publishing destination." />
+		<MakeDir Condition="!Exists($(PublishDestination))" Directories="$(PublishDestination)" />
+		<CreateItem Include="$(_PackageTempDir)\**\*.*" Exclude="">
+			<Output TaskParameter="Include" ItemName="PublishFiles" />
+		</CreateItem>
+		<Copy SourceFiles="@(PublishFiles)" DestinationFiles="@(PublishFiles->'$(PublishDestination)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="True" />
+	</Target>
+	<Target Name="PublishDestinationClean" Condition="'$(PublishClean)' != ''">
+		<Error Condition="'$(PublishDestination)'==''" Text="The PublishDestination property must be set to the intended publishing destination." />
+		<MSBuild.ExtensionPack.FileSystem.Folder TaskAction="RemoveContent" Path="$(PublishDestination)" />
+	</Target>
+
+</Project>

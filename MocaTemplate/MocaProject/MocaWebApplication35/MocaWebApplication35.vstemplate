@@ -1,0 +1,112 @@
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Moca.NET Web Application</Name>
+		<Description>Moca.NET Web Application</Description>
+		<Icon>MocaWebApplication35.ico</Icon>
+		<ProjectType>VisualBasic</ProjectType>
+		<ProjectSubType>Moca.NET</ProjectSubType>
+		<TemplateID>49c400bf-4611-41e0-b0dc-a0bbd6a8a79c</TemplateID>
+		<SortOrder>1000</SortOrder>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<CreateNewFolder>true</CreateNewFolder>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<DefaultName>MocaWebApplication</DefaultName>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<MaxFrameworkVersion>3.5</MaxFrameworkVersion>
+		<PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+	<TemplateContent>
+		<Project File="ProjectTemplate.vbproj" ReplaceParameters="true">
+			<Folder Name="bin\Config" TargetFolderName="bin\Config">
+				<ProjectItem ReplaceParameters="true" TargetFileName="db.config">db.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="log4net.config">log4net.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="Moca.config">Moca.config</ProjectItem>
+			</Folder>
+			<Folder Name="Config" TargetFolderName="Config">
+				<ProjectItem ReplaceParameters="true" TargetFileName="db.config">db.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="db.Debug.config">db.Debug.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="db.Hotfix.config">db.Hotfix.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="db.Release.config">db.Release.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="log4net.config">log4net.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="log4net.Debug.config">log4net.Debug.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="log4net.Hotfix.config">log4net.Hotfix.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="log4net.Release.config">log4net.Release.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="Moca.config">Moca.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="Moca.Debug.config">Moca.Debug.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="Moca.Hotfix.config">Moca.Hotfix.config</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="Moca.Release.config">Moca.Release.config</ProjectItem>
+			</Folder>
+			<Folder Name="App_Codes\Db" TargetFolderName="App_Codes\Db" />
+			<Folder Name="App_Codes\Entity" TargetFolderName="App_Codes\Entity" />
+			<Folder Name="App_Codes\UI" TargetFolderName="App_Codes\UI">
+				<ProjectItem ReplaceParameters="true" TargetFileName="AjaxMinUserControl.vb">AjaxMinUserControl.vb</ProjectItem>
+			</Folder>
+			<Folder Name="App_Codes\Web" TargetFolderName="App_Codes\Web">
+				<ProjectItem ReplaceParameters="true" TargetFileName="ISession.vb">ISession.vb</ProjectItem>
+			</Folder>
+      <Folder Name="App_Codes\Sys" TargetFolderName="App_Codes\Sys">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SysSettings.vb">SysSettings.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SysSettingsProperty.vb">SysSettingsProperty.vb</ProjectItem>
+      </Folder>
+      <Folder Name="Content" TargetFolderName="Content">
+				<ProjectItem ReplaceParameters="true" TargetFileName="StyleSheet.css">StyleSheet.css</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="StyleSheet.min.css">StyleSheet.min.css</ProjectItem>
+			</Folder>
+			<ProjectItem ReplaceParameters="true" TargetFileName="My Project\MyExtensions\MyWebExtension.vb">MyWebExtension.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="My Project\AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="My Project\MocaAssemblyInfo.vb">MocaAssemblyInfo.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\Application.myapp">Application.myapp</ProjectItem>
+			<ProjectItem ReplaceParameters="true"  TargetFileName="My Project\Application.Designer.vb">Application.Designer.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\Resources.resx">Resources.resx</ProjectItem>
+			<ProjectItem ReplaceParameters="true"  TargetFileName="My Project\Resources.Designer.vb">Resources.Designer.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\Settings.settings">Settings.settings</ProjectItem>
+			<ProjectItem ReplaceParameters="true"  TargetFileName="My Project\Settings.Designer.vb">Settings.Designer.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\Moca.targets">Moca.targets</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\AjaxMin.targets">AjaxMin.targets</ProjectItem>
+			<Folder Name="Views" TargetFolderName="Views">
+				<Folder Name="Shared" TargetFolderName="Shared">
+					<Folder Name="Controls" TargetFolderName="Controls">
+						<ProjectItem ReplaceParameters="true" TargetFileName="Footer.ascx">Footer.ascx</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Footer.ascx.vb">Footer.ascx.vb</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Footer.ascx.designer.vb">Footer.ascx.designer.vb</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Scripts.ascx">Scripts.ascx</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Scripts.ascx.vb">Scripts.ascx.vb</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Scripts.ascx.designer.vb">Scripts.ascx.designer.vb</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Styles.ascx">Styles.ascx</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Styles.ascx.vb">Styles.ascx.vb</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Styles.ascx.designer.vb">Styles.ascx.designer.vb</ProjectItem>
+					</Folder>
+					<Folder Name="Master" TargetFolderName="Master">
+						<ProjectItem ReplaceParameters="true" TargetFileName="Base.Master">Base.Master</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Base.Master.vb">Base.Master.vb</ProjectItem>
+						<ProjectItem ReplaceParameters="true" TargetFileName="Base.Master.designer.vb">Base.Master.designer.vb</ProjectItem>
+					</Folder>
+				</Folder>
+			</Folder>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+			<Folder Name="App_Readme" TargetFolderName="App_Readme">
+				<ProjectItem ReplaceParameters="true" TargetFileName="Elmah.sqldb.readme.txt">Elmah.sqldb.readme.txt</ProjectItem>
+			</Folder>
+			<Folder Name="App_Readme\Scripts\Tables" TargetFolderName="App_Readme\Scripts\Tables">
+				<ProjectItem ReplaceParameters="true" TargetFileName="ELMAH_Error.sql">ELMAH_Error.sql</ProjectItem>
+			</Folder>
+			<Folder Name="App_Readme\Scripts\Stored Procedures" TargetFolderName="App_Readme\Scripts\Stored Procedures">
+				<ProjectItem ReplaceParameters="true" TargetFileName="ELMAH_GetErrorsXml.sql">ELMAH_GetErrorsXml.sql</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="ELMAH_GetErrorXml.sql">ELMAH_GetErrorXml.sql</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="ELMAH_LogError.sql">ELMAH_LogError.sql</ProjectItem>
+			</Folder>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.vb">Global.asax.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Index.aspx">Index.aspx</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Index.aspx.vb">Index.aspx.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Index.aspx.designer.vb">Index.aspx.designer.vb</ProjectItem>
+		</Project>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>MocaWizard, Version=1.9.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
+		<FullClassName>Moca.TemplateWizard.WebNuGetPackageWizard35</FullClassName>
+	</WizardExtension>
+</VSTemplate>

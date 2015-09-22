@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Web ユーザー コントロール</Name>
+    <Description>ASP.NET サーバー コントロールです。（継承元がMocaのユーザーコントロールになります）</Description>
+    <Icon>MocaWebUserControl.ico</Icon>
+    <TemplateID>D3B57596-E90F-4000-819A-BC4FF3E59161</TemplateID>
+    <SortOrder>1000</SortOrder>
+    <DefaultName>WebUserControl</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Moca.NET</ProjectSubType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>Moca</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>MocaWeb</Assembly>
+      </Reference>
+    </References>
+
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.ascx">webusercontrolCs.ascx</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.ascx.designer.cs">webusercontrolCs.ascx.designer.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.ascx.cs">webusercontrolCs.ascx.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

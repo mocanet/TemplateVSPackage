@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{F184B08F-C81C-45f6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <ProjectGuid>{AA671D38-55BE-40BD-9616-AB2DF53526EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MocaWebApplication35</RootNamespace>
+    <AssemblyName>MocaWebApplication35</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Shared\Controls\Footer.ascx.designer.vb">
+      <DependentUpon>Footer.ascx.vb</DependentUpon>
+    </None>
+    <None Include="Views\Shared\Controls\Footer.ascx.vb">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </None>
+    <None Include="Views\Shared\Controls\Scripts.ascx.designer.vb">
+      <DependentUpon>Scripts.ascx.vb</DependentUpon>
+    </None>
+    <None Include="Views\Shared\Controls\Scripts.ascx.vb">
+      <DependentUpon>Scripts.ascx</DependentUpon>
+    </None>
+    <None Include="Views\Shared\Controls\Styles.ascx.designer.vb">
+      <DependentUpon>Styles.ascx.vb</DependentUpon>
+    </None>
+    <None Include="Views\Shared\Controls\Styles.ascx.vb">
+      <DependentUpon>Styles.ascx</DependentUpon>
+    </None>
+    <None Include="Views\Shared\Master\Base.Master.designer.vb">
+      <DependentUpon>Base.Master.vb</DependentUpon>
+    </None>
+    <None Include="Views\Shared\Master\Base.Master.vb">
+      <DependentUpon>Base.Master</DependentUpon>
+    </None>
+    <None Include="AjaxMin.targets" />
+    <None Include="AssemblyInfo.vb" />
+    <None Include="Config\db.Hotfix.config" />
+    <None Include="Config\log4net.Hotfix.config" />
+    <None Include="Config\Moca.Hotfix.config" />
+    <None Include="mywebextension.vb" />
+    <None Include="MocaAssemblyInfo.vb" />
+    <None Include="global.asax.vb">
+      <DependentUpon>global.asax</DependentUpon>
+    </None>
+    <None Include="application.designer.vb" />
+    <None Include="App_Codes\UI\AjaxMinUserControl.vb" />
+    <None Include="App_Codes\Web\ISession.vb" />
+    <None Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx.vb</DependentUpon>
+    </None>
+    <None Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </None>
+    <None Include="App_Codes\Sys\SysSettings.vb" />
+    <None Include="App_Codes\Sys\SysSettingsProperty.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <None Include="Views\Shared\Master\Base.Master" />
+    <None Include="web.config" />
+    <None Include="web.debug.config" />
+    <None Include="web.release.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Config\db.config" />
+    <None Include="bin\Config\log4net.config" />
+    <None Include="bin\Config\Moca.config" />
+    <None Include="Config\db.config" />
+    <None Include="Config\db.Debug.config" />
+    <None Include="Config\db.Release.config" />
+    <None Include="Config\log4net.config" />
+    <None Include="Config\log4net.Debug.config" />
+    <None Include="Config\log4net.Release.config" />
+    <None Include="Config\Moca.config" />
+    <None Include="Config\Moca.Debug.config" />
+    <None Include="Config\Moca.Release.config" />
+    <None Include="Moca.targets" />
+    <None Include="MocaWebApplication35.ico" />
+    <None Include="ProjectTemplate.vbproj" />
+    <None Include="Resources.Designer.vb" />
+    <None Include="Resources.resx" />
+    <None Include="Settings.Designer.vb" />
+    <None Include="Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="MocaWebApplication35.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Index.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="Views\Shared\Controls\Footer.ascx" />
+    <None Include="Views\Shared\Controls\Scripts.ascx" />
+    <None Include="Views\Shared\Controls\Styles.ascx" />
+    <None Include="Content\StyleSheet.css" />
+    <None Include="Content\StyleSheet.min.css" />
+    <None Include="application.myapp" />
+    <Content Include="App_Readme\Elmah.sqldb.readme.txt" />
+    <Content Include="App_Readme\Scripts\Stored Procedures\ELMAH_GetErrorsXml.sql" />
+    <Content Include="App_Readme\Scripts\Stored Procedures\ELMAH_GetErrorXml.sql" />
+    <Content Include="App_Readme\Scripts\Stored Procedures\ELMAH_LogError.sql" />
+    <Content Include="App_Readme\Scripts\Tables\ELMAH_Error.sql" />
+    <None Include="global.asax" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\VSSDK\Microsoft.VsSDK.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  -->
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="$(OutputPath)ProjectTemplates\VisualBasic\1033\MocaWebApplication35.zip" DestinationFolder="..\..\..\MocaVSIX\ProjectTemplates\VisualBasic\Moca.NET" OverwriteReadOnlyFiles="true" />
+    <Copy SourceFiles="$(OutputPath)ProjectTemplates\VisualBasic\1033\MocaWebApplication35.zip" DestinationFolder="..\..\..\MocaTemplateVSPackage\ProjectTemplates\VisualBasic\Moca.NET" OverwriteReadOnlyFiles="true" />
+    <Delete Files="$(OutputPath)ProjectTemplates\VisualBasic\1033\MocaWebApplication35.zip" />
+  </Target>
+</Project>

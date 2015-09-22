@@ -1,0 +1,54 @@
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Moca.NET Windows Form Application</Name>
+		<Description>Moca.NET Windows Form Application</Description>
+		<Icon>MocaWindowsApplication.ico</Icon>
+		<ProjectType>VisualBasic</ProjectType>
+		<ProjectSubType>Moca.NET</ProjectSubType>
+		<TemplateID>868b9283-2eff-44d2-bb21-db39679846e0</TemplateID>
+		<SortOrder>1000</SortOrder>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<CreateNewFolder>true</CreateNewFolder>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<DefaultName>MocaWindowsApplication</DefaultName>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+	<TemplateContent>
+		<Project File="ProjectTemplate.vbproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="My Project\AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\Application.myapp">Application.myapp</ProjectItem>
+			<ProjectItem ReplaceParameters="true"  TargetFileName="My Project\Application.Designer.vb">Application.Designer.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\Resources.resx">Resources.resx</ProjectItem>
+			<ProjectItem ReplaceParameters="true"  TargetFileName="My Project\Resources.Designer.vb">Resources.Designer.vb</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="My Project\Settings.settings">Settings.settings</ProjectItem>
+			<ProjectItem ReplaceParameters="true"  TargetFileName="My Project\Settings.Designer.vb">Settings.Designer.vb</ProjectItem>
+			<Folder Name="Db" TargetFolderName="Db" />
+      <Folder Name="Form" TargetFolderName="Form">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Form1.vb">Form1.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.vb">Form1.Designer.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Form1.resx">Form1.resx</ProjectItem>
+      </Folder>
+      <Folder Name="Sys" TargetFolderName="Sys">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SysSettings.vb">SysSettings.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SysSettingsProperty.vb">SysSettingsProperty.vb</ProjectItem>
+      </Folder>
+    </Project>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>MocaWizard, Version=1.9.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
+		<FullClassName>Moca.TemplateWizard.WinNuGetPackageWizard</FullClassName>
+	</WizardExtension>
+	<!--
+	<WizardExtension>
+		<Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+		<FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+	</WizardExtension>
+	<WizardData>
+		<packages repository="extension" repositoryId="MocaTemplate.MiYABiS.8f23ff00-7d14-4c97-9366-3f0d92fae82b">
+			<package id="Moca.NETWin" version="1.4.0.0" />
+		</packages>
+	</WizardData>
+	-->
+</VSTemplate>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Dao クラス</Name>
+		<Description>Dao クラスの定義です。（インタフェースと実装クラス定義）</Description>
+		<Icon>MocaItem.ico</Icon>
+		<TemplateID>5d4e9078-360a-4e70-99b0-8c69edf4a9a6</TemplateID>
+		<SortOrder>1000</SortOrder>
+		<DefaultName>DaoClass</DefaultName>
+		<ProjectType>VisualBasic</ProjectType>
+		<ProjectSubType>Moca.NET</ProjectSubType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+	</TemplateData>
+	<TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>Moca</Assembly>
+			</Reference>
+		</References>
+
+		<ProjectItem SubType="Code" TargetFileName="I$fileinputname$.vb" OpenInEditor="true" OpenOrder="10" ReplaceParameters="true">IDaoTemplate.vb</ProjectItem>
+		<ProjectItem SubType="Code" TargetFileName="Impl\$fileinputname$.vb" OpenInEditor="true" OpenOrder="20" ReplaceParameters="true">DaoTemplate.vb</ProjectItem>
+	</TemplateContent>
+</VSTemplate>

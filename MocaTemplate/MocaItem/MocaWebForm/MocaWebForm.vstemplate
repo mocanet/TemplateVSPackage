@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Web フォーム</Name>
+		<Description>Webフォームの定義です。（継承元がMocaのページになります）</Description>
+		<Icon>MocaWebForm.ico</Icon>
+		<TemplateID>c1182e77-2837-43e2-8473-cfccb72a3cc1</TemplateID>
+		<SortOrder>1000</SortOrder>
+		<DefaultName>WebForm</DefaultName>
+		<ProjectType>VisualBasic</ProjectType>
+		<ProjectSubType>Moca.NET</ProjectSubType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+	</TemplateData>
+	<TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>Moca</Assembly>
+			</Reference>
+			<Reference>
+				<Assembly>MocaWeb</Assembly>
+			</Reference>
+		</References>
+
+		<ProjectItem SubType="" TargetFileName="$fileinputname$.aspx" ReplaceParameters="true">MocaWebForm.aspx</ProjectItem>
+		<ProjectItem SubType="" TargetFileName="$fileinputname$.aspx.designer.vb" ReplaceParameters="true">MocaWebForm.aspx.designer.vb</ProjectItem>
+		<ProjectItem SubType="ASPXCodebehind" TargetFileName="$fileinputname$.aspx.vb" ReplaceParameters="true">MocaWebForm.aspx.vb</ProjectItem>
+	</TemplateContent>
+</VSTemplate>

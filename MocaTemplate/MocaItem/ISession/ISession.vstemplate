@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Web Session インタフェース</Name>
+		<Description>Session インタフェースの定義です。</Description>
+		<Icon>ISession.ico</Icon>
+		<TemplateID>967f6834-19b1-4f66-b403-49cd5c917b6d</TemplateID>
+		<SortOrder>1000</SortOrder>
+		<DefaultName>ISession.vb</DefaultName>
+		<ProjectType>VisualBasic</ProjectType>
+		<ProjectSubType>Moca.NET</ProjectSubType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<LocationField>Enabled</LocationField>
+	</TemplateData>
+	<TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>Moca</Assembly>
+			</Reference>
+			<Reference>
+				<Assembly>MocaWeb</Assembly>
+			</Reference>
+		</References>
+
+		<ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.vb">ISession.vb</ProjectItem>
+	</TemplateContent>
+</VSTemplate>

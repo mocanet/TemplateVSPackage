@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Web StyleSheetファイル（min.cssファイルあり）</Name>
+		<Description>StyleSheetファイルと圧縮版のmin.cssファイルを作成します。</Description>
+		<Icon>CssAjaxMin.ico</Icon>
+		<TemplateID>3e50e4d9-d2a3-40fd-95cb-a666b53a8b7e</TemplateID>
+		<SortOrder>1000</SortOrder>
+		<DefaultName>StyleSheet.css</DefaultName>
+		<ProjectType>VisualBasic</ProjectType>
+		<ProjectSubType>Moca.NET</ProjectSubType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.css" OpenInEditor="true" ReplaceParameters="true">StyleSheet.css</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.min.css" ReplaceParameters="true">StyleSheet.min.css</ProjectItem>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>MocaWizard, Version=1.9.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
+		<FullClassName>Moca.TemplateWizard.JsAjaxMin</FullClassName>
+	</WizardExtension>
+</VSTemplate>

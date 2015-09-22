@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Web JavaScriptファイル（min.jsファイルあり）</Name>
+		<Description>JavaScriptファイルと圧縮版のmin.jsファイルを作成します。</Description>
+		<Icon>JsAjaxMin.ico</Icon>
+		<TemplateID>651e2b09-cb58-45ad-bf62-8712e0c0d123</TemplateID>
+		<SortOrder>1000</SortOrder>
+		<DefaultName>JScript.js</DefaultName>
+		<ProjectType>VisualBasic</ProjectType>
+		<ProjectSubType>Moca.NET</ProjectSubType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.js" OpenInEditor="true" ReplaceParameters="true">JScript.js</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.min.js" ReplaceParameters="true">JScript.min.js</ProjectItem>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>MocaWizard, Version=1.9.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
+		<FullClassName>Moca.TemplateWizard.JsAjaxMin</FullClassName>
+	</WizardExtension>
+</VSTemplate>

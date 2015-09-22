@@ -1,0 +1,71 @@
+﻿*
+{
+	color: #444;
+}
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	font-family: メイリオ, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+	font-size: 12px;
+}
+
+h1
+{
+	font-weight: normal;
+	font-size: 32px;
+	color: #fff;
+}
+
+div.main
+{
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: table;
+	text-align: center;
+}
+
+div.contents
+{
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.container
+{
+	margin-top: 40px;
+	font-size: 24px;
+	font-size: 20px;
+}
+
+	.container a
+	{
+		color: #0AB9BC;
+	}
+
+div.background
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50%;
+	width: 100%;
+	background-color: #0AB9BC;
+	z-index: -100;
+}
+
+div.footer
+{
+	margin-top: 40px;
+}

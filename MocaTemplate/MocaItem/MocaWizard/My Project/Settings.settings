@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="NuGetConstantsType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NuGet.NuGetConstants, NuGet.VisualStudio</Value>
+    </Setting>
+    <Setting Name="NuGetDefaultFeedUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DefaultFeedUrl</Value>
+    </Setting>
+    <Setting Name="MocaNETWin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Moca.NETWin</Value>
+    </Setting>
+    <Setting Name="MocaNETWebApp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Moca.NETWebApp</Value>
+    </Setting>
+    <Setting Name="Elmah" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">elmah</Value>
+    </Setting>
+    <Setting Name="ElmahVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1.2.2</Value>
+    </Setting>
+    <Setting Name="MocaNETWinVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.0.0</Value>
+    </Setting>
+    <Setting Name="MocaNETWebAppVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.0.0</Value>
+    </Setting>
+    <Setting Name="AspNetWebApi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AspNetWebApi</Value>
+    </Setting>
+    <Setting Name="AspNetWebApiVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4.0.20710.0</Value>
+    </Setting>
+    <Setting Name="FriendlyUrls" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Microsoft.AspNet.FriendlyUrls</Value>
+    </Setting>
+    <Setting Name="FriendlyUrlsVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1.0.2</Value>
+    </Setting>
+    <Setting Name="Log4net" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">log4net</Value>
+    </Setting>
+    <Setting Name="Log4netVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.0.3</Value>
+    </Setting>
+    <Setting Name="MSBuildExtensionPack" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MSBuild.Extension.Pack</Value>
+    </Setting>
+    <Setting Name="MSBuildExtensionPackVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1.6.0</Value>
+    </Setting>
+    <Setting Name="AjaxMin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AjaxMin</Value>
+    </Setting>
+    <Setting Name="AjaxMinVer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5.14.5506.26202</Value>
+    </Setting>
+    <Setting Name="MocaNETWindowsFormProject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.0.0</Value>
+    </Setting>
+    <Setting Name="MocaNETWebFormsProject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.0.0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

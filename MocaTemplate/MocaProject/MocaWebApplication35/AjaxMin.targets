@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="JSBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <!-- BuildAction	-->
+  <ItemGroup>
+    <AvailableItemName Include="AjaxMin" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <global>jQuery,$</global>
+  </PropertyGroup>
+
+  <UsingTask TaskName="IsFileReadOnly" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+    <ParameterGroup>
+      <FileName ParameterType="System.String" Required="true" />
+      <IsReadOnly ParameterType="System.Boolean" Output="true" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System.IO"/>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+				this.IsReadOnly = new FileInfo(this.FileName).IsReadOnly;
+				]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="MocaBuildAjaxMin" DependsOnTargets="" Inputs="%(AjaxMin.FullPath)" Outputs="@(AjaxMin ->'%(RootDir)%(Directory)%(filename).min%(extension)')">
+    <ItemGroup>
+      <TargetFile Include="%(AjaxMin.FullPath)" />
+    </ItemGroup>
+    <PropertyGroup>
+      <OutputMinFile>@(TargetFile ->'%(RootDir)%(Directory)%(filename).min%(extension)')</OutputMinFile>
+    </PropertyGroup>
+    <Message Text="OutputMinFile : $(OutputMinFile)" />
+
+    <IsFileReadOnly FileName="%(AjaxMin.FullPath)">
+      <Output PropertyName="IsReadOnlyAjaxMinFile" TaskParameter="IsReadOnly"/>
+    </IsFileReadOnly>
+    <Message Text="%(AjaxMin.FullPath) : $(IsReadOnlyAjaxMinFile)" />
+
+    <IsFileReadOnly FileName="$(OutputMinFile)">
+      <Output PropertyName="IsReadOnlyOutputMinFile" TaskParameter="IsReadOnly"/>
+    </IsFileReadOnly>
+    <Message Text="$(OutputMinFile) : $(IsReadOnlyOutputMinFile)" />
+
+    <ItemGroup>
+      <vspscc Include="$(MyProjectDirectory)\$(MyProjectName).vbproj.vspscc" />
+      <scc Include="$(MyProjectDirectory)\mssccprj.scc" />
+    </ItemGroup>
+
+    <MSBuild.ExtensionPack.VisualStudio.TfsSource
+			Condition=" Exists('@(vspscc)') AND !$(IsReadOnlyAjaxMinFile) AND Exists('$(OutputMinFile)') AND $(IsReadOnlyOutputMinFile)"
+			TaskAction="Checkout"
+			Version="2010"
+			WorkingDirectory="$(MyProjectDirectory)"
+			ItemPath="$(OutputMinFile)"/>
+
+    <AjaxMin Condition=" '%(TargetFile.Extension)' == '.js' AND Exists('@(TargetFile)') AND $(IsReadOnlyAjaxMinFile) == false"
+				 Switches="-global:$(global) -clobber -analyze -evals:immediate"
+				 JsSourceFiles="@(TargetFile)" JsSourceExtensionPattern="\.js$" JsTargetExtension=".min.js" />
+    <AjaxMin Condition=" '%(TargetFile.Extension)' == '.css' AND Exists('@(TargetFile)') AND $(IsReadOnlyAjaxMinFile) == false"
+				 Switches="-global:$(global) -clobber -analyze -evals:immediate"
+				 CssSourceFiles="@(TargetFile)" CssSourceExtensionPattern="\.css$" CssTargetExtension=".min.css" />
+
+  </Target>
+
+</Project>

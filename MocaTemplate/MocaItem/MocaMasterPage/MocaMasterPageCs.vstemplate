@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Web マスターページ</Name>
+    <Description>Webマスターページの定義です。（継承元がMocaのマスターページになります）</Description>
+    <Icon>MocaMasterPage.ico</Icon>
+    <TemplateID>3960E5BF-2E0D-4908-968D-ACBB0D603A89</TemplateID>
+    <SortOrder>1000</SortOrder>
+    <DefaultName>SiteBase</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Moca.NET</ProjectSubType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>Moca</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>MocaWeb</Assembly>
+      </Reference>
+    </References>
+
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.Master" ReplaceParameters="true">Site1.Master</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.Master.designer.cs" ReplaceParameters="true">Site1.Master.designer.cs</ProjectItem>
+    <ProjectItem SubType="ASPXCodebehind" TargetFileName="$fileinputname$.Master.cs" ReplaceParameters="true">Site1.Master.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
