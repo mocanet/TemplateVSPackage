@@ -218,7 +218,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("2.0.0")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3.0.0")>  _
         Public ReadOnly Property MocaNETWindowsFormProject() As String
             Get
                 Return CType(Me("MocaNETWindowsFormProject"),String)
@@ -227,7 +227,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("2.0.0")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3.0.0")>  _
         Public ReadOnly Property MocaNETWebFormsProject() As String
             Get
                 Return CType(Me("MocaNETWebFormsProject"),String)
