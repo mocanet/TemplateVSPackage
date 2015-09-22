@@ -219,6 +219,24 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("3.0.0")>  _
+        Public ReadOnly Property MocaNETWindowsFormProjectVer() As String
+            Get
+                Return CType(Me("MocaNETWindowsFormProjectVer"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3.0.0")>  _
+        Public ReadOnly Property MocaNETWebFormsProjectVer() As String
+            Get
+                Return CType(Me("MocaNETWebFormsProjectVer"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Moca.NETWindowsFormProject")>  _
         Public ReadOnly Property MocaNETWindowsFormProject() As String
             Get
                 Return CType(Me("MocaNETWindowsFormProject"),String)
@@ -227,7 +245,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("3.0.0")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Moca.NETWebFormsProject")>  _
         Public ReadOnly Property MocaNETWebFormsProject() As String
             Get
                 Return CType(Me("MocaNETWebFormsProject"),String)

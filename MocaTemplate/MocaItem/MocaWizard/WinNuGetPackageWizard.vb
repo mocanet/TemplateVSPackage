@@ -24,7 +24,6 @@ Public Class WinNuGetPackageWizard
 		nugetPkg = New NuGetPackage()
 
         dic.Add(My.Settings.Log4net, My.Settings.Log4netVer)
-        'dic.Add(My.Settings.MocaNETWin, Nothing)
         dic.Add(My.Settings.MocaNETWindowsFormProject, Nothing)
 
         nugetPkg.Install(_project, dic)

@@ -29,7 +29,6 @@ Public Class WebNuGetPackageWizard35
         dic.Add(My.Settings.AjaxMin, My.Settings.AjaxMinVer)
         dic.Add(My.Settings.Elmah, My.Settings.ElmahVer)
         dic.Add(My.Settings.MocaNETWebFormsProject, Nothing)
-        dic.Add(My.Settings.MocaNETWebApp, Nothing)
 
         nugetPkg.Install(_project, dic)
 	End Sub

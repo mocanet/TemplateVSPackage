@@ -31,7 +31,6 @@ Public Class WebNuGetPackageWizard
         dic.Add(My.Settings.FriendlyUrls, My.Settings.FriendlyUrlsVer)
         dic.Add(My.Settings.AspNetWebApi, My.Settings.AspNetWebApiVer)
         dic.Add(My.Settings.MocaNETWebFormsProject, Nothing)
-        dic.Add(My.Settings.MocaNETWebApp, Nothing)
 
         nugetPkg.Install(_project, dic)
     End Sub
