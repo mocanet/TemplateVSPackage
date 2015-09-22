@@ -7,12 +7,12 @@
     <MoreInfo>http://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290</MoreInfo>
   </Metadata>
   <Installation>
-    <InstallationTarget Version="[10.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
-    <InstallationTarget Version="[10.0,15.0)" Id="Microsoft.VisualStudio.Community" />
-    <InstallationTarget Version="[10.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
-    <InstallationTarget Version="[10.0,15.0)" Id="Microsoft.VisualStudio.VWDExpress" />
-    <InstallationTarget Version="[10.0,15.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
-    <InstallationTarget Version="[10.0,15.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
   </Installation>
   <Dependencies>
   </Dependencies>
