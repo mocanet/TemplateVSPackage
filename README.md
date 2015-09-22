@@ -1,4 +1,26 @@
-# TemplateVSPackage
+﻿# TemplateVSPackage
+
+[![Build status](https://ci.appveyor.com/api/projects/status/1s0gom7tl6yldrgq?svg=true)](https://ci.appveyor.com/project/miyabis/templatevspackage)
+
+Moca.NET framework Templates.
+
+**Project Templates** (Only supports VB.NET code)
+
+* Moca.NET Windows Forms application 
+* Moca.NET Web application 
+
+**Item Template**
+
+* Dao class template 
+* Entity Wizard 
+* Web User Control template 
+* Web Form template 
+* Web Master Page template 
+* Web Session interface template 
+* Web Cookie interface template 
+* Web API Controller template 
+* IMethodInterceptor implements class template 
+* SQL statements Interceptor implements class template 
 
 
 How to get
