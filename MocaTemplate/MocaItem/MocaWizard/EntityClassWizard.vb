@@ -118,8 +118,10 @@ Public Class EntityClassWizard
                 End Using
             End Using
         Catch ex As Exception
-            _vsMgr.BuildOutputString(ex.ToString)
-            Throw ex
+            If _vsMgr IsNot Nothing Then
+                _vsMgr.BuildOutputString(ex.ToString)
+            End If
+            Throw New Exceptions.MocaRuntimeException(ex, "Microsoft SQL Server Data Tools might not have been installed.")
         End Try
     End Sub
 
