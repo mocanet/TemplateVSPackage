@@ -123,18 +123,25 @@
   <data name="WizardControl1.CancelButtonText" xml:space="preserve">
     <value>キャンセル</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WizardControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="WizardControl1.FinishButtonText" xml:space="preserve">
     <value>完了</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="WizardControl1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="WizardControl1.NextButtonText" xml:space="preserve">
     <value>次へ</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="RichTextBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>580, 279</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 15</value>
+    <value>57, 15</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>データ接続</value>
@@ -145,20 +152,40 @@
   <data name="btnAddDataSource.Text" xml:space="preserve">
     <value>新しい接続…</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chkAutoImplementedProperties.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 372</value>
+  </data>
+  <data name="wzpGenerateSettings.Text" xml:space="preserve">
+    <value>コード設定</value>
+  </data>
+  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 372</value>
+  </data>
+  <data name="wzpExecSQL.Text" xml:space="preserve">
+    <value>SQLステートメント実行</value>
+  </data>
+  <data name="WizardControl1.Title" xml:space="preserve">
+    <value>エンティティコード ウィザード</value>
+  </data>
+  <data name="chkINotifyPropertyChanged.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 172</value>
+  </data>
+  <data name="chkINotifyPropertyChanged.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 24</value>
+  </data>
+  <data name="chkINotifyPropertyChanged.Text" xml:space="preserve">
+    <value>NotifyPropertyChanged実装</value>
   </data>
   <data name="chkAutoImplementedProperties.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 12world</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="chkAutoImplementedProperties.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkAutoImplementedProperties.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 19</value>
+    <value>276, 19</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="chkAutoImplementedProperties.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -229,7 +256,7 @@
     <value>334, 105</value>
   </data>
   <data name="DataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 225</value>
+    <value>279, 250</value>
   </data>
   <data name="DataGridView2.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -275,20 +302,5 @@
   </data>
   <data name="txtNamespace.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 23</value>
-  </data>
-  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>641, 347</value>
-  </data>
-  <data name="wzpGenerateSettings.Text" xml:space="preserve">
-    <value>コード設定</value>
-  </data>
-  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>641, 347</value>
-  </data>
-  <data name="wzpExecSQL.Text" xml:space="preserve">
-    <value>SQLステートメント実行</value>
-  </data>
-  <data name="WizardControl1.Title" xml:space="preserve">
-    <value>エンティティコード ウィザード</value>
   </data>
 </root>

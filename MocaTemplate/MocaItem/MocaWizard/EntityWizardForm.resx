@@ -137,8 +137,8 @@
   <data name="&gt;&gt;txtNamespace.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cboConnectionStrings.Parent" xml:space="preserve">
-    <value>wzpExecSQL</value>
+  <data name="&gt;&gt;chkTable.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;RichTextBox1.Name" xml:space="preserve">
     <value>RichTextBox1</value>
@@ -174,7 +174,7 @@
     <value>19, 20</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -184,7 +184,7 @@
     <value>22, 54</value>
   </data>
   <data name="&gt;&gt;wzpGenerateSettings.Type" xml:space="preserve">
-    <value>AeroWizard.WizardPage, AeroWizard, Version=2.0.9.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
   </data>
   <data name="&gt;&gt;Label1.Name" xml:space="preserve">
     <value>Label1</value>
@@ -199,7 +199,7 @@
     <value />
   </data>
   <data name="&gt;&gt;txtNamespace.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
@@ -240,6 +240,9 @@
   <data name="&gt;&gt;txtNamespace.Parent" xml:space="preserve">
     <value>wzpGenerateSettings</value>
   </data>
+  <data name="&gt;&gt;chkINotifyPropertyChanged.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
   <data name="chkDifinition.Text" xml:space="preserve">
     <value>Generate Column Definition</value>
   </data>
@@ -247,13 +250,16 @@
     <value>0, 0</value>
   </data>
   <data name="&gt;&gt;DataGridView2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;txtTableName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtTableName.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;chkINotifyPropertyChanged.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CheckBox1.Name" xml:space="preserve">
     <value>CheckBox1</value>
@@ -271,7 +277,7 @@
     <value>231, 22</value>
   </data>
   <data name="&gt;&gt;chkDifinition.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Label3.Name" xml:space="preserve">
     <value>Label3</value>
@@ -294,6 +300,9 @@
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
+  <data name="chkINotifyPropertyChanged.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
   <data name="&gt;&gt;btnAddDataSource.Name" xml:space="preserve">
     <value>btnAddDataSource</value>
   </data>
@@ -305,9 +314,6 @@
   </data>
   <data name="&gt;&gt;btnAddDataSource.Parent" xml:space="preserve">
     <value>wzpExecSQL</value>
-  </data>
-  <data name="&gt;&gt;WizardControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="txtNamespace.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 42</value>
@@ -327,9 +333,6 @@
   <data name="txtTableName.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="Label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="&gt;&gt;Label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -343,10 +346,13 @@
     <value>Verdana, 11.25pt</value>
   </data>
   <data name="&gt;&gt;wzpExecSQL.Type" xml:space="preserve">
-    <value>AeroWizard.WizardPage, AeroWizard, Version=2.0.9.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
   </data>
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;chkINotifyPropertyChanged.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;chkAutoImplementedProperties.Parent" xml:space="preserve">
     <value>wzpGenerateSettings</value>
@@ -357,11 +363,14 @@
   <data name="chkDifinition.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;chkTable.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;WizardControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>629, 376</value>
+  </data>
+  <data name="chkINotifyPropertyChanged.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 177</value>
   </data>
   <data name="cboConnectionStrings.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 17</value>
@@ -420,6 +429,9 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;chkINotifyPropertyChanged.Name" xml:space="preserve">
+    <value>chkINotifyPropertyChanged</value>
+  </data>
   <data name="txtTableName.Location" type="System.Drawing.Point, System.Drawing">
     <value>322, 42</value>
   </data>
@@ -447,11 +459,14 @@
   <data name="chkDifinition.Location" type="System.Drawing.Point, System.Drawing">
     <value>322, 18</value>
   </data>
+  <data name="&gt;&gt;cboConnectionStrings.Parent" xml:space="preserve">
+    <value>wzpExecSQL</value>
+  </data>
   <data name="&gt;&gt;Label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;chkAutoImplementedProperties.Name" xml:space="preserve">
     <value>chkAutoImplementedProperties</value>
@@ -499,7 +514,7 @@
     <value>1</value>
   </data>
   <data name="&gt;&gt;chkAutoImplementedProperties.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;chkTable.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -514,7 +529,7 @@
     <value>91, 18</value>
   </data>
   <data name="&gt;&gt;WizardControl1.Type" xml:space="preserve">
-    <value>AeroWizard.WizardControl, AeroWizard, Version=2.0.9.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+    <value>AeroWizard.WizardControl, AeroWizard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
   </data>
   <data name="txtTableName.Size" type="System.Drawing.Size, System.Drawing">
     <value>279, 26</value>
@@ -528,20 +543,23 @@
   <data name="txtClassName.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 26</value>
   </data>
-  <data name="&gt;&gt;RichTextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="Label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 11.25pt</value>
   </data>
   <data name="&gt;&gt;txtClassName.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txtNamespace.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="chkTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -565,6 +583,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja</value>
+    <value>en</value>
   </metadata>
 </root>

@@ -80,6 +80,8 @@ Public Class EntityCodeGenerator
         End Set
     End Property
 
+    Public Property INotifyPropertyChangedBase As Boolean
+
 #End Region
 
     ''' <summary>
@@ -95,7 +97,11 @@ Public Class EntityCodeGenerator
 
         _dump = CodeDomProvider.CreateProvider(language.ToString)
 
-        Dim filename As String = path & "\" & Me._className & "." & _dump.FileExtension
+        If Not System.IO.Directory.Exists(path) Then
+            System.IO.Directory.CreateDirectory(path)
+        End If
+
+        Dim filename As String = System.IO.Path.Combine(path, Me._className & "." & _dump.FileExtension)
         Using writer As StreamWriter = New StreamWriter(filename, False)
             Using tw As New IndentedTextWriter(writer)
                 _dump.GenerateCodeFromCompileUnit(_compileUnit, tw, opt)
@@ -119,6 +125,9 @@ Public Class EntityCodeGenerator
         ' Imports 定義
         cn.Imports.Add(New CodeNamespaceImport("Moca.Db"))
         cn.Imports.Add(New CodeNamespaceImport("Moca.Db.Attr"))
+        If Me.INotifyPropertyChangedBase Then
+            cn.Imports.Add(New CodeNamespaceImport("System.ComponentModel"))
+        End If
 
         ' 準備
         _compileUnit.Namespaces.Add(cn)
@@ -127,8 +136,38 @@ Public Class EntityCodeGenerator
         ' Class 定義
         Dim class1 As CodeTypeDeclaration
         class1 = _createType(_className)
+        If Me.INotifyPropertyChangedBase Then
+            class1.BaseTypes.Add(GetType(System.ComponentModel.INotifyPropertyChanged))
+        End If
         cn.Types.Add(class1)
         _createEntity(class1, columns)
+
+        If Me.INotifyPropertyChangedBase Then
+            Dim ev As CodeMemberEvent = New CodeMemberEvent()
+            ev.Name = "PropertyChanged"
+            ev.Attributes = MemberAttributes.Public
+            ev.ImplementationTypes.Add(GetType(System.ComponentModel.INotifyPropertyChanged))
+            ev.Type = New CodeTypeReference(GetType(System.ComponentModel.PropertyChangedEventHandler))
+            class1.Members.Add(ev)
+
+            Dim mtd As CodeMemberMethod = New CodeMemberMethod()
+            mtd.Name = "OnPropertyChanged"
+            mtd.Attributes = MemberAttributes.Family
+            class1.Members.Add(mtd)
+            Dim methodParameter As CodeParameterDeclarationExpression = New CodeParameterDeclarationExpression(GetType(String), "name")
+            mtd.Parameters.Add(methodParameter)
+
+            If Me.Language = LanguageType.VisualBasic Then
+                ' VB
+                Dim snip2 As CodeSnippetExpression = New CodeSnippetExpression("RaiseEvent PropertyChanged(Me, New System.ComponentModel.PropertyChangedEventArgs(name))")
+                mtd.Statements.Add(snip2)
+            Else
+                ' C#
+                Dim createArgs As CodeObjectCreateExpression = New CodeObjectCreateExpression(GetType(System.ComponentModel.PropertyChangedEventArgs), New CodeArgumentReferenceExpression("name"))
+                Dim raiseEventExp As CodeDelegateInvokeExpression = New CodeDelegateInvokeExpression(New CodeVariableReferenceExpression("PropertyChanged"), New CodeThisReferenceExpression(), createArgs)
+                mtd.Statements.Add(raiseEventExp)
+            End If
+        End If
 
         If difinition Is Nothing Then
             Exit Sub
@@ -161,13 +200,14 @@ Public Class EntityCodeGenerator
             field = _createField(col)
             prop = _createColumnProperty(field, col.ColumnName)
             aryField.Add(field)
-            If Me.AutoImplementedProperties Then
+            If Me.AutoImplementedProperties AndAlso Not Me.INotifyPropertyChangedBase Then
                 If Me.Language = LanguageType.VisualBasic Then
                     'snippet.Text = String.Format("<Column(""{0}"")>{1}Public Property {2} AS {3}", col.ColumnName, Environment.NewLine, prop.Name, _dump.GetTypeOutput(dType))
                     field.Name = "Property " & prop.Name
                     field.Attributes = MemberAttributes.Public Or MemberAttributes.Final
                     field.CustomAttributes.Add(New CodeAttributeDeclaration("Column", New CodeAttributeArgument(New CodeSnippetExpression("""" & col.ColumnName & """"))))
                     typ.Members.Add(field)
+                    _addComment(field, prop.Name & " (" & col.ColumnName & ") Property.")
                 Else
                     Dim dType As New CodeTypeReference(col.DataType)
                     Dim snippet As CodeSnippetTypeMember = New CodeSnippetTypeMember()
@@ -182,9 +222,11 @@ Public Class EntityCodeGenerator
                 typ.Members.Add(field)
                 aryProperty.Add(prop)
                 typ.Members.Add(prop)
+                If Me.INotifyPropertyChangedBase Then
+                End If
             End If
         Next
-        If Me.AutoImplementedProperties Then
+        If Me.AutoImplementedProperties AndAlso Not Me.INotifyPropertyChangedBase Then
             If Me.Language = LanguageType.VisualBasic Then
                 aryField(0).StartDirectives.Add(_createRegionStart("Property"))
                 aryField(columns.Count - 1).EndDirectives.Add(_createRegionEnd())
@@ -258,13 +300,18 @@ Public Class EntityCodeGenerator
         prop.Name = name
         prop.Attributes = MemberAttributes.Public Or MemberAttributes.Final
         prop.Type = field.Type
-        If Not Me.AutoImplementedProperties Then
-            prop.GetStatements.Add(New CodeMethodReturnStatement(New CodeFieldReferenceExpression(New CodeThisReferenceExpression(), field.Name)))
-            prop.SetStatements.Add(New CodeAssignStatement(New CodeFieldReferenceExpression(New CodeThisReferenceExpression(), field.Name), New CodePropertySetValueReferenceExpression()))
-        Else
+        If Me.AutoImplementedProperties AndAlso Not Me.INotifyPropertyChangedBase Then
             prop.HasGet = False
             prop.HasSet = False
             prop.EndDirectives.Clear()
+        Else
+            prop.GetStatements.Add(New CodeMethodReturnStatement(New CodeFieldReferenceExpression(New CodeThisReferenceExpression(), field.Name)))
+            prop.SetStatements.Add(New CodeAssignStatement(New CodeFieldReferenceExpression(New CodeThisReferenceExpression(), field.Name), New CodePropertySetValueReferenceExpression()))
+            If Me.INotifyPropertyChangedBase Then
+                Dim cmre As CodeMethodReferenceExpression = New CodeMethodReferenceExpression()
+                cmre.MethodName = "OnPropertyChanged"
+                prop.SetStatements.Add(New CodeMethodInvokeExpression(cmre, New CodeSnippetExpression(String.Format("""{0}""", prop.Name))))
+            End If
         End If
         _addComment(prop, prop.Name & " (" & columnName & ") Property.")
         prop.CustomAttributes.Add(New CodeAttributeDeclaration("Column", New CodeAttributeArgument(New CodeSnippetExpression("""" & columnName & """"))))
@@ -389,6 +436,12 @@ Public Class EntityCodeGenerator
         prop.Comments.Add(New CodeCommentStatement(_getComment("<summary>"), True))
         prop.Comments.Add(New CodeCommentStatement(_getComment(summary), True))
         prop.Comments.Add(New CodeCommentStatement(_getComment("</summary>"), True))
+    End Sub
+
+    Private Sub _addComment(ByVal field As CodeMemberField, ByVal summary As String)
+        field.Comments.Add(New CodeCommentStatement(_getComment("<summary>"), True))
+        field.Comments.Add(New CodeCommentStatement(_getComment(summary), True))
+        field.Comments.Add(New CodeCommentStatement(_getComment("</summary>"), True))
     End Sub
 
     Private Function _getComment(ByVal msg As String) As String

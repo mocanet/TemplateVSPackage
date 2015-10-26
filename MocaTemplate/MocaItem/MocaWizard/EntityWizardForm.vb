@@ -130,6 +130,7 @@ Public Class EntityWizardForm
             gen.Namespace = Me.txtNamespace.Text
             gen.ClassName = Me.txtClassName.Text
             gen.AutoImplementedProperties = Me.chkAutoImplementedProperties.Checked
+            gen.INotifyPropertyChangedBase = Me.chkINotifyPropertyChanged.Checked
             gen.TableProperty = Me.chkTable.Checked
             If Me.chkDifinition.Checked Then
                 gen.TableName = Me.txtTableName.Text
