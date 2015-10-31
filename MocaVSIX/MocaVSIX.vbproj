@@ -8,7 +8,7 @@
     <ProjectGuid>{6DEC88FB-4FA5-462D-B6F1-B6367528F113}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>MocaVSIX</RootNamespace>
-    <AssemblyName>Moca</AssemblyName>
+    <AssemblyName>MocaTemplate</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
@@ -64,6 +64,10 @@
     <Content Include="ja\MocaWizard.resources.dll">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="License.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="ProjectTemplates\VisualBasic\Moca.NET\MocaWebApplication.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -197,6 +201,6 @@
   </Target>
   -->
   <Target Name="AfterBuild">
-    <Copy SourceFiles="$(OutputPath)Moca.vsix" DestinationFolder="..\Release" OverwriteReadOnlyFiles="true" />
+    <Copy SourceFiles="$(OutputPath)MocaTemplate.vsix" DestinationFolder="..\Release" OverwriteReadOnlyFiles="true" />
   </Target>
 </Project>
