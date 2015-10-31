@@ -3,24 +3,30 @@
 	<Identifier Id="MocaTemplate.MiYABiS.3cc7fa13-aa5d-4900-854f-459f70698700">
 		<Name>Moca.NET Templates 2010</Name>
 		<Author>MiYABiS</Author>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Description xml:space="preserve">Moca.NET Templates 2010</Description>
-		<Locale>1041</Locale>
+		<Locale>1033</Locale>
 		<MoreInfoUrl>https://visualstudiogallery.msdn.microsoft.com/f97a7486-560b-425a-aa05-528dd397f5ba</MoreInfoUrl>
-    <License>license.txt</License>
+		<License>license.txt</License>
 		<SupportedProducts>
 			<VisualStudio Version="10.0">
 				<Edition>Ultimate</Edition>
 				<Edition>Premium</Edition>
 				<Edition>Pro</Edition>
-        <Edition>Community</Edition>
-      </VisualStudio>
-    </SupportedProducts>
+				<Edition>Community</Edition>
+			</VisualStudio>
+		</SupportedProducts>
 		<SupportedFrameworkRuntimeEdition MinVersion="2.0" MaxVersion="4.6" />
 	</Identifier>
-	<Content>
-		<Assembly AssemblyName="|MocaWizard;AssemblyName|">|MocaWizard|</Assembly>
+	<References>
+		<Reference Id="SqlStudio..AAAAAAAA-3691-4DF9-905E-1FC3D5513942">
+			<Name>SQL Server Data Tools</Name>
+			<MoreInfoUrl>http://msdn.microsoft.com/en-us/data/bb931106.aspx</MoreInfoUrl>
+		</Reference>
+	</References>
+  <Content>
+    <Assembly AssemblyName="|MocaWizard;AssemblyName|">|MocaWizard|</Assembly>
     <ProjectTemplate>ProjectTemplates</ProjectTemplate>
-		<ItemTemplate>ItemTemplates</ItemTemplate>
-	</Content>
+    <ItemTemplate>ItemTemplates</ItemTemplate>
+  </Content>
 </Vsix>
