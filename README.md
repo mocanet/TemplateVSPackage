@@ -10,7 +10,7 @@ Moca.NET framework Templates.
 * Moca.NET Windows Forms application 
 * Moca.NET Web application 
 
-**Item Template**
+**Item Template** (supports VB.NET and C# code)
 
 * Dao class template 
 * Entity Wizard 
@@ -22,6 +22,8 @@ Moca.NET framework Templates.
 * Web API Controller template 
 * IMethodInterceptor implements class template 
 * SQL statements Interceptor implements class template 
+* Selenium Test Class
+* Selenium Test Page Class
 
 
 How to get
