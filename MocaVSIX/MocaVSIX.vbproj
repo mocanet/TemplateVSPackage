@@ -196,14 +196,11 @@
     <Compile Include="My Project\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MocaTemplate\MocaItem\MocaWizard\MocaWizard.vbproj">
-      <Project>{AB143B64-0674-4D35-AC14-8982AE2037FB}</Project>
+    <ProjectReference Include="..\MocaTemplate\MocaItem\MocaWizard2010\MocaWizard.vbproj">
+      <Project>{ab143b64-0674-4d35-ac14-8982ae2037fb}</Project>
       <Name>MocaWizard</Name>
-      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3b</IncludeOutputGroupsInVSIX>
-      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
     <VsSDK>$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v11.0\VSSDK\Microsoft.VsSDK.targets</VsSDK>
