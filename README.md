@@ -1,6 +1,7 @@
 ﻿# TemplateVSPackage
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1s0gom7tl6yldrgq?svg=true)](https://ci.appveyor.com/project/miyabis/templatevspackage)
+[![Build status](https://ci.appveyor.com/api/projects/status/nhhpxdnm7n7crsfh?svg=true)](https://ci.appveyor.com/project/miyabis/templatevspackage-qdu06)
 
 Moca.NET framework Templates.
 
