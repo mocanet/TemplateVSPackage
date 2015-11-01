@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Selenium テストページクラス</Name>
+    <Description>Selenium テストページクラスの定義です。</Description>
+    <Icon>SeleniumPage.ico</Icon>
+    <TemplateID>9C5F948B-622F-4FA6-9741-69249D66BD64</TemplateID>
+    <SortOrder>1000</SortOrder>
+    <DefaultName>SeleniumPage.cs</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <LocationField>Enabled</LocationField>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">DefaultPage.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

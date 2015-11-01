@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Selenium テストクラス</Name>
+    <Description>Selenium テストクラスの定義です。</Description>
+    <Icon>SeleniumTest.ico</Icon>
+    <TemplateID>b89ca43e-15af-4d94-b743-0ef8d84a8aaf</TemplateID>
+    <SortOrder>1000</SortOrder>
+    <DefaultName>SeleniumTest.vb</DefaultName>
+    <ProjectType>VisualBasic</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <LocationField>Enabled</LocationField>
+  </TemplateData>
+  <TemplateContent>
+    <!--<References>
+      <Reference>
+        <Assembly>WebDriver</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>WebDriver.Support</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.QualityTools.UnitTestFramework</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>SeleniumTestAssist, Version=4.5.0.0, Culture=neutral, PublicKeyToken=</Assembly>
+      </Reference>
+    </References>-->
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.vb" ReplaceParameters="true">ClassTest.vb</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
