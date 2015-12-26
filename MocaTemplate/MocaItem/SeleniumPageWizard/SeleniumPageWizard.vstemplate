@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>PageObject クラス</Name>
+    <Description>PageObject クラスの定義です</Description>
+    <Icon>SeleniumPageWizard.ico</Icon>
+    <TemplateID>1fd61b36-530f-4db9-9c30-9e035368315a</TemplateID>
+    <SortOrder>1000</SortOrder>
+    <DefaultName>PageObject.vb</DefaultName>
+    <ProjectType>VisualBasic</ProjectType>
+    <ProjectSubType>Selenium</ProjectSubType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <TemplateContent>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>MocaWizard, Version=1.9.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
+    <FullClassName>Moca.TemplateWizard.SeleniumPageWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
