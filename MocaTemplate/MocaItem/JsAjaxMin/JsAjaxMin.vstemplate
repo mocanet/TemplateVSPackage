@@ -17,7 +17,7 @@
 		<ProjectItem TargetFileName="$fileinputname$.min.js" ReplaceParameters="true">JScript.min.js</ProjectItem>
 	</TemplateContent>
 	<WizardExtension>
-		<Assembly>MocaWizard, Version=1.9.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
+		<Assembly>MocaWizard, Version=1.10.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
 		<FullClassName>Moca.TemplateWizard.JsAjaxMin</FullClassName>
 	</WizardExtension>
 </VSTemplate>
