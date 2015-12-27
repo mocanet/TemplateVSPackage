@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="MocaTemplate.MiYABiS.8f23ff00-7d14-4c97-9366-3f0d92fae82b" Version="3.2.3" Language="en-US" Publisher="MiYABiS" />
+    <Identity Id="MocaTemplate.MiYABiS.8f23ff00-7d14-4c97-9366-3f0d92fae82b" Version="3.3.3" Language="en-US" Publisher="MiYABiS" />
     <DisplayName>Moca.NET Template 3.0</DisplayName>
     <Description xml:space="preserve">Moca.NET Templates</Description>
     <MoreInfo>http://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290</MoreInfo>
