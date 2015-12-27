@@ -152,6 +152,21 @@
   <data name="btnAddDataSource.Text" xml:space="preserve">
     <value>新しい接続…</value>
   </data>
+  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 372</value>
+  </data>
+  <data name="wzpGenerateSettings.Text" xml:space="preserve">
+    <value>コード設定</value>
+  </data>
+  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 372</value>
+  </data>
+  <data name="wzpExecSQL.Text" xml:space="preserve">
+    <value>SQLステートメント実行</value>
+  </data>
+  <data name="WizardControl1.Title" xml:space="preserve">
+    <value>エンティティコード ウィザード</value>
+  </data>
   <data name="chkINotifyPropertyChanged.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 172</value>
   </data>
@@ -287,20 +302,5 @@
   </data>
   <data name="txtNamespace.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 23</value>
-  </data>
-  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 372</value>
-  </data>
-  <data name="wzpGenerateSettings.Text" xml:space="preserve">
-    <value>コード設定</value>
-  </data>
-  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 372</value>
-  </data>
-  <data name="wzpExecSQL.Text" xml:space="preserve">
-    <value>SQLステートメント実行</value>
-  </data>
-  <data name="WizardControl1.Title" xml:space="preserve">
-    <value>エンティティコード ウィザード</value>
   </data>
 </root>
