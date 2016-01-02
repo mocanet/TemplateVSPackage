@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Moca.NET Template by mocanet</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Moca.NET Template</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/mocanet/TemplateVSPackage/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/mocanet/TemplateVSPackage/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/mocanet/TemplateVSPackage">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mocanet">mocanet</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="mocanet-template" class="anchor" href="#mocanet-template" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moca.NET Template</h1>
+
+<p><a href="https://ci.appveyor.com/project/miyabis/templatevspackage"><img src="https://ci.appveyor.com/api/projects/status/1s0gom7tl6yldrgq?svg=true" alt="Build status"></a>
+<a href="https://ci.appveyor.com/project/miyabis/templatevspackage-qdu06"><img src="https://ci.appveyor.com/api/projects/status/nhhpxdnm7n7crsfh?svg=true" alt="Build status"></a></p>
+
+<p>Moca.NET framework Templates.</p>
+
+<p><strong>Project Templates</strong> (Only supports VB.NET code)</p>
+
+<ul>
+<li>Moca.NET Windows Forms application </li>
+<li>Moca.NET Web application </li>
+</ul>
+
+<p><strong>Item Template</strong> (supports VB.NET and C# code)</p>
+
+<p>for Moca.NET</p>
+
+<ul>
+<li>Dao class template </li>
+<li>Entity Wizard </li>
+<li>Web User Control template </li>
+<li>Web Form template </li>
+<li>Web Master Page template </li>
+<li>Web Session interface template </li>
+<li>Web Cookie interface template </li>
+<li>Web API Controller template </li>
+<li>IMethodInterceptor implements class template </li>
+<li>SQL statements Interceptor implements class template </li>
+</ul>
+
+<p>for Selenium</p>
+
+<ul>
+<li>Selenium Test Class</li>
+<li>Selenium Test Page Class</li>
+<li>Selenium Test PageObject Class Wizard</li>
+</ul>
+
+<h1>
+<a id="how-to-get" class="anchor" href="#how-to-get" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to get</h1>
+
+<p>vs2012 or later : <a href="https://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290">Moca.NET Template 3.0</a><br>
+vs2010 : <a href="https://visualstudiogallery.msdn.microsoft.com/f97a7486-560b-425a-aa05-528dd397f5ba">Moca.NET Templates 2010</a></p>
+
+<h1>
+<a id="entity-wizard-" class="anchor" href="#entity-wizard-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Entity Wizard </h1>
+
+<p>It's the wizard into which a used entity class is formed from a SQL statement to use Moca.NET.</p>
+
+<p><img src="Images/EntityCodeWizard-00.png" alt="EntityCodeWizard-00" title="wizard">
+<img src="Images/EntityCodeWizard-01.png" alt="EntityCodeWizard-01" title="wizard"></p>
+
+<div class="highlight highlight-source-vbnet"><pre><span class="pl-c">'------------------------------------------------------------------------------</span>
+<span class="pl-c">' &lt;auto-generated&gt;</span>
+<span class="pl-c">'     このコードはツールによって生成されました。</span>
+<span class="pl-c">'     ランタイム バージョン:4.0.30319.42000</span>
+<span class="pl-c">'</span>
+<span class="pl-c">'     このファイルへの変更は、以下の状況下で不正な動作の原因になったり、</span>
+<span class="pl-c">'     コードが再生成されるときに損失したりします。</span>
+<span class="pl-c">' &lt;/auto-generated&gt;</span>
+<span class="pl-c">'------------------------------------------------------------------------------</span>
+
+<span class="pl-k">Option</span> <span class="pl-c1">Strict</span> <span class="pl-c1">Off</span>
+<span class="pl-k">Option</span> <span class="pl-c1">Explicit</span> <span class="pl-c1">On</span>
+
+<span class="pl-k">Imports</span> Moca.Db
+<span class="pl-k">Imports</span> Moca.Db.Attr
+<span class="pl-k">Imports</span> System.ComponentModel
+
+
+<span class="pl-c">''' &lt;summary&gt; </span>
+<span class="pl-c">''' EntityClass1 エンティティ </span>
+<span class="pl-c">''' &lt;/summary&gt; </span>
+<span class="pl-c">''' &lt;remarks&gt;&lt;/remarks&gt; </span>
+<span class="pl-c">''' &lt;history&gt; </span>
+<span class="pl-c">''' &lt;/history&gt; </span>
+<span class="pl-k">Public</span> <span class="pl-k">Class</span> <span class="pl-en">EntityClass1</span>
+    <span class="pl-k">Implements </span>System<span class="pl-k">.</span>ComponentModel<span class="pl-k">.</span>INotifyPropertyChanged
+
+    <span class="pl-k">#Region</span> <span class="pl-s">" Declare "</span>
+    <span class="pl-k">Private</span> _id <span class="pl-k">As </span><span class="pl-c1">Integer</span>
+
+    <span class="pl-k">Private</span> _note <span class="pl-k">As </span><span class="pl-c1">String</span>
+
+    <span class="pl-k">Private</span> _name <span class="pl-k">As </span><span class="pl-c1">String</span>
+    <span class="pl-k">#End Region</span>
+
+    <span class="pl-k">#Region</span> <span class="pl-s">" Property "</span>
+    <span class="pl-c">''' &lt;summary&gt; </span>
+    <span class="pl-c">''' Id (Id) Property. </span>
+    <span class="pl-c">''' &lt;/summary&gt; </span>
+    <span class="pl-k">&lt;</span>Column(<span class="pl-s">"Id"</span>)<span class="pl-k">&gt;</span>  <span class="pl-k">_</span>
+    <span class="pl-k">Public</span> <span class="pl-k">Property</span> <span class="pl-en">Id</span>() <span class="pl-k">As </span><span class="pl-c1">Integer</span>
+<span class="pl-k">        Get</span>
+            <span class="pl-k">Return</span> <span class="pl-k">Me.</span>_id
+        <span class="pl-k">End Get</span>
+<span class="pl-k">        Set</span>
+            <span class="pl-k">Me.</span>_id <span class="pl-k">=</span> value
+            OnPropertyChanged(<span class="pl-s">"Id"</span>)
+        <span class="pl-k">End Set</span>
+<span class="pl-k">    End Property</span>
+
+    <span class="pl-c">''' &lt;summary&gt; </span>
+    <span class="pl-c">''' Note (Note) Property. </span>
+    <span class="pl-c">''' &lt;/summary&gt; </span>
+    <span class="pl-k">&lt;</span>Column(<span class="pl-s">"Note"</span>)<span class="pl-k">&gt;</span>  <span class="pl-k">_</span>
+    <span class="pl-k">Public</span> <span class="pl-k">Property</span> <span class="pl-en">Note</span>() <span class="pl-k">As </span><span class="pl-c1">String</span>
+<span class="pl-k">        Get</span>
+            <span class="pl-k">Return</span> <span class="pl-k">Me.</span>_note
+        <span class="pl-k">End Get</span>
+<span class="pl-k">        Set</span>
+            <span class="pl-k">Me.</span>_note <span class="pl-k">=</span> value
+            OnPropertyChanged(<span class="pl-s">"Note"</span>)
+        <span class="pl-k">End Set</span>
+<span class="pl-k">    End Property</span>
+
+    <span class="pl-c">''' &lt;summary&gt; </span>
+    <span class="pl-c">''' Name (Name) Property. </span>
+    <span class="pl-c">''' &lt;/summary&gt; </span>
+    <span class="pl-k">&lt;</span>Column(<span class="pl-s">"Name"</span>)<span class="pl-k">&gt;</span>  <span class="pl-k">_</span>
+    <span class="pl-k">Public</span> <span class="pl-k">Property</span> <span class="pl-en">Name</span>() <span class="pl-k">As </span><span class="pl-c1">String</span>
+<span class="pl-k">        Get</span>
+            <span class="pl-k">Return</span> <span class="pl-k">Me.</span>_name
+        <span class="pl-k">End Get</span>
+<span class="pl-k">        Set</span>
+            <span class="pl-k">Me.</span>_name <span class="pl-k">=</span> value
+            OnPropertyChanged(<span class="pl-s">"Name"</span>)
+        <span class="pl-k">End Set</span>
+<span class="pl-k">    End Property</span>
+    <span class="pl-k">#End Region</span>
+
+    <span class="pl-k">Public</span> <span class="pl-c1">Event</span> PropertyChanged <span class="pl-k">As </span>System<span class="pl-k">.</span>ComponentModel<span class="pl-k">.</span>PropertyChangedEventHandler <span class="pl-k">Implements </span>System<span class="pl-k">.</span>ComponentModel<span class="pl-k">.</span>INotifyPropertyChanged<span class="pl-k">.</span>PropertyChanged
+
+    <span class="pl-k">Protected</span> <span class="pl-k">Overridable</span> <span class="pl-c1">Sub</span> <span class="pl-en">OnPropertyChanged</span>(<span class="pl-k">ByVal </span>name <span class="pl-k">As </span><span class="pl-c1">String</span>)
+        <span class="pl-k">RaiseEvent</span> PropertyChanged(Me, <span class="pl-c1">New</span> System<span class="pl-k">.</span>ComponentModel<span class="pl-k">.</span>PropertyChangedEventArgs(name))
+<span class="pl-k">    End Sub</span>
+<span class="pl-k">End Class</span></pre></div>
+
+<h1>
+<a id="selenium-test-pageobject-class-wizard" class="anchor" href="#selenium-test-pageobject-class-wizard" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selenium Test PageObject Class Wizard</h1>
+
+<p>Wizards which makes a PageObject class of selenium from a Web page.</p>
+
+<p><img src="Images/SeleniumPageObjectWizard.png" alt="PageObjectWizard" title="wizard"></p>
+
+<div class="highlight highlight-source-vbnet"><pre><span class="pl-c">'------------------------------------------------------------------------------</span>
+<span class="pl-c">' &lt;auto-generated&gt;</span>
+<span class="pl-c">'     このコードはツールによって生成されました。</span>
+<span class="pl-c">'     ランタイム バージョン:4.0.30319.42000</span>
+<span class="pl-c">'</span>
+<span class="pl-c">'     このファイルへの変更は、以下の状況下で不正な動作の原因になったり、</span>
+<span class="pl-c">'     コードが再生成されるときに損失したりします。</span>
+<span class="pl-c">' &lt;/auto-generated&gt;</span>
+<span class="pl-c">'------------------------------------------------------------------------------</span>
+
+<span class="pl-k">Option</span> <span class="pl-c1">Strict</span> <span class="pl-c1">Off</span>
+<span class="pl-k">Option</span> <span class="pl-c1">Explicit</span> <span class="pl-c1">On</span>
+
+<span class="pl-k">Imports</span> MiYABiS.SeleniumTestAssist
+<span class="pl-k">Imports</span> OpenQA.Selenium
+<span class="pl-k">Imports</span> OpenQA.Selenium.Support.PageObjects
+
+
+<span class="pl-c">''' &lt;summary&gt; </span>
+<span class="pl-c">''' PageObject1 PageObjects  </span>
+<span class="pl-c">''' &lt;/summary&gt; </span>
+<span class="pl-c">''' &lt;remarks&gt;&lt;/remarks&gt; </span>
+<span class="pl-c">''' &lt;history&gt; </span>
+<span class="pl-c">''' &lt;/history&gt; </span>
+<span class="pl-k">Public</span> <span class="pl-k">Class</span> <span class="pl-en">PageObject1</span>
+    <span class="pl-k">Inherits </span>SeleniumAction
+
+<span class="pl-k">#Region</span> <span class="pl-s">" Declare "</span>
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"service-alert"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _serviceAlert <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"outer-wrapper"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _outerWrapper <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"content-wrapper"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _contentWrapper <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"layout-footer"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _layoutFooter <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"body"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _body <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"logo"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _logo <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"header-sidebox"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _headerSidebox <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"searchBox"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _searchBox <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"searchBoxInput"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _searchBoxInput <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"searchBoxSubmit"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _searchBox<span class="pl-c1">Sub</span>mit <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"menu"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _menu <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"UniquePackages"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _uniquePackages <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"Downloads"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _downloads <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"TotalPackages"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _totalPackages <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"footer"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _footer <span class="pl-k">As </span>IWebElement
+
+    <span class="pl-k">&lt;</span>FindsBy([<span class="pl-k">Using</span>]<span class="pl-k">:=</span><span class="pl-s">"releaseTag"</span>)<span class="pl-k">&gt;</span>
+    <span class="pl-k">Private</span> _releaseTag <span class="pl-k">As </span>IWebElement
+<span class="pl-k">#End Region</span>
+
+    <span class="pl-k">Public</span> <span class="pl-c1">Sub</span> <span class="pl-en">New</span>(<span class="pl-k">ByVal </span>driver <span class="pl-k">As </span>IWebDriver)
+        <span class="pl-k">MyBase.</span><span class="pl-c1">New</span>(driver)
+<span class="pl-k">    End Sub</span>
+<span class="pl-k">End Class</span></pre></div>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>Microsoft Public License (MS-PL)</p>
+
+<p><a href="http://opensource.org/licenses/MS-PL">http://opensource.org/licenses/MS-PL</a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
