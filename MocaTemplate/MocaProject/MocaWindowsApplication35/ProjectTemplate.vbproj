@@ -106,17 +106,17 @@
 		</None>
 	</ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\Form1.Designer.vb">
+    <Compile Include="Forms\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form1.vb">
+    <Compile Include="Forms\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sys\SysSettings.vb" />
     <Compile Include="Sys\SysSettingsProperty.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form\Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

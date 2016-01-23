@@ -55,13 +55,17 @@ Public Class SeleniumPageWizardForm
     End Sub
 
     Private Sub btnGet_Click(sender As Object, e As EventArgs) Handles btnGet.Click
+        WebBrowser1.Url = New Uri(Me.txtURL.Text)
+    End Sub
+
+    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         Try
             Cursor = Windows.Forms.Cursors.WaitCursor
             grdvElements.SuspendLayout()
 
             Dim target As New HtmlAnalyzer()
             Dim lst As IList(Of XElementRow)
-            lst = target.GetPage(txtURL.Text)
+            lst = target.GetPage(WebBrowser1.DocumentStream)
             grdvElements.DataSource = lst
             grdvElements.AutoSizeColumnsMode = Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Catch ex As Exception

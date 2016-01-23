@@ -35,7 +35,13 @@ Partial Class SeleniumPageWizardForm
         Me.txtClassName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNamespace = New System.Windows.Forms.TextBox()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         CType(Me.grdvElements, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
         'grdvElements
@@ -59,7 +65,8 @@ Partial Class SeleniumPageWizardForm
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.grdvElements.DefaultCellStyle = DataGridViewCellStyle2
-        Me.grdvElements.Location = New System.Drawing.Point(30, 64)
+        Me.grdvElements.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdvElements.Location = New System.Drawing.Point(0, 0)
         Me.grdvElements.Name = "grdvElements"
         Me.grdvElements.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -72,14 +79,14 @@ Partial Class SeleniumPageWizardForm
         Me.grdvElements.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.grdvElements.RowTemplate.Height = 21
         Me.grdvElements.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grdvElements.Size = New System.Drawing.Size(415, 265)
+        Me.grdvElements.Size = New System.Drawing.Size(275, 547)
         Me.grdvElements.TabIndex = 2
         '
         'btnGet
         '
         Me.btnGet.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.btnGet.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnGet.Location = New System.Drawing.Point(370, 24)
+        Me.btnGet.Location = New System.Drawing.Point(705, 24)
         Me.btnGet.Name = "btnGet"
         Me.btnGet.Size = New System.Drawing.Size(75, 23)
         Me.btnGet.TabIndex = 1
@@ -89,9 +96,9 @@ Partial Class SeleniumPageWizardForm
         'txtURL
         '
         Me.txtURL.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.txtURL.Location = New System.Drawing.Point(71, 24)
+        Me.txtURL.Location = New System.Drawing.Point(49, 24)
         Me.txtURL.Name = "txtURL"
-        Me.txtURL.Size = New System.Drawing.Size(293, 23)
+        Me.txtURL.Size = New System.Drawing.Size(650, 23)
         Me.txtURL.TabIndex = 0
         '
         'Label1
@@ -99,7 +106,7 @@ Partial Class SeleniumPageWizardForm
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label1.Location = New System.Drawing.Point(28, 27)
+        Me.Label1.Location = New System.Drawing.Point(12, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(31, 15)
         Me.Label1.TabIndex = 8
@@ -107,10 +114,11 @@ Partial Class SeleniumPageWizardForm
         '
         'btnCancel
         '
+        Me.btnCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCancel.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.btnCancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnCancel.Location = New System.Drawing.Point(386, 423)
+        Me.btnCancel.Location = New System.Drawing.Point(797, 623)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 26)
         Me.btnCancel.TabIndex = 6
@@ -119,9 +127,10 @@ Partial Class SeleniumPageWizardForm
         '
         'btnOK
         '
+        Me.btnOK.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnOK.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.btnOK.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnOK.Location = New System.Drawing.Point(305, 423)
+        Me.btnOK.Location = New System.Drawing.Point(716, 623)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(75, 26)
         Me.btnOK.TabIndex = 5
@@ -130,12 +139,12 @@ Partial Class SeleniumPageWizardForm
         '
         'Label3
         '
-        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Label3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label3.Location = New System.Drawing.Point(28, 379)
+        Me.Label3.Location = New System.Drawing.Point(467, 608)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 15)
         Me.Label3.TabIndex = 28
@@ -143,22 +152,22 @@ Partial Class SeleniumPageWizardForm
         '
         'txtClassName
         '
-        Me.txtClassName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtClassName.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtClassName.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.txtClassName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtClassName.Location = New System.Drawing.Point(109, 376)
+        Me.txtClassName.Location = New System.Drawing.Point(470, 626)
         Me.txtClassName.Name = "txtClassName"
-        Me.txtClassName.Size = New System.Drawing.Size(336, 23)
+        Me.txtClassName.Size = New System.Drawing.Size(240, 23)
         Me.txtClassName.TabIndex = 4
         '
         'Label2
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label2.Location = New System.Drawing.Point(28, 346)
+        Me.Label2.Location = New System.Drawing.Point(221, 608)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 15)
         Me.Label2.TabIndex = 27
@@ -166,25 +175,53 @@ Partial Class SeleniumPageWizardForm
         '
         'txtNamespace
         '
-        Me.txtNamespace.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtNamespace.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNamespace.Font = New System.Drawing.Font("Meiryo UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.txtNamespace.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtNamespace.Location = New System.Drawing.Point(109, 343)
+        Me.txtNamespace.Location = New System.Drawing.Point(224, 626)
         Me.txtNamespace.Name = "txtNamespace"
-        Me.txtNamespace.Size = New System.Drawing.Size(336, 23)
+        Me.txtNamespace.Size = New System.Drawing.Size(240, 23)
         Me.txtNamespace.TabIndex = 3
+        '
+        'SplitContainer1
+        '
+        Me.SplitContainer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SplitContainer1.Location = New System.Drawing.Point(12, 53)
+        Me.SplitContainer1.Name = "SplitContainer1"
+        '
+        'SplitContainer1.Panel1
+        '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.WebBrowser1)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.grdvElements)
+        Me.SplitContainer1.Size = New System.Drawing.Size(860, 547)
+        Me.SplitContainer1.SplitterDistance = 581
+        Me.SplitContainer1.TabIndex = 29
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(581, 547)
+        Me.WebBrowser1.TabIndex = 0
         '
         'SeleniumPageWizardForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(473, 461)
+        Me.ClientSize = New System.Drawing.Size(884, 661)
         Me.ControlBox = False
+        Me.Controls.Add(Me.SplitContainer1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtClassName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtNamespace)
-        Me.Controls.Add(Me.grdvElements)
         Me.Controls.Add(Me.btnGet)
         Me.Controls.Add(Me.txtURL)
         Me.Controls.Add(Me.Label1)
@@ -195,6 +232,10 @@ Partial Class SeleniumPageWizardForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Selenium PageObject Wizard"
         CType(Me.grdvElements, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -210,4 +251,6 @@ Partial Class SeleniumPageWizardForm
     Friend WithEvents txtClassName As Windows.Forms.TextBox
     Friend WithEvents Label2 As Windows.Forms.Label
     Friend WithEvents txtNamespace As Windows.Forms.TextBox
+    Friend WithEvents SplitContainer1 As Windows.Forms.SplitContainer
+    Friend WithEvents WebBrowser1 As Windows.Forms.WebBrowser
 End Class

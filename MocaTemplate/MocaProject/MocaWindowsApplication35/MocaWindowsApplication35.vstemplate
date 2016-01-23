@@ -26,7 +26,7 @@
       <ProjectItem ReplaceParameters="false" TargetFileName="My Project\Settings.settings">Settings.settings</ProjectItem>
       <ProjectItem ReplaceParameters="true"  TargetFileName="My Project\Settings.Designer.vb">Settings.Designer.vb</ProjectItem>
       <Folder Name="Db" TargetFolderName="Db" />
-      <Folder Name="Form" TargetFolderName="Form">
+      <Folder Name="Forms" TargetFolderName="Forms">
         <ProjectItem ReplaceParameters="true" TargetFileName="Form1.vb">Form1.vb</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.vb">Form1.Designer.vb</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Form1.resx">Form1.resx</ProjectItem>

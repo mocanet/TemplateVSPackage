@@ -74,10 +74,10 @@
     <None Include="Sys\SysSettingsProperty.vb" />
     <None Include="Sys\SysSettings.vb" />
     <None Include="Application.Designer.vb" />
-    <None Include="Form\Form1.Designer.vb">
+    <None Include="Forms\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </None>
-    <None Include="Form\Form1.vb" />
+    <None Include="Forms\Form1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -99,7 +99,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Form\Form1.resx">
+    <None Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </None>
   </ItemGroup>
