@@ -161,7 +161,7 @@ Public Class VsManager
         _IVsDataConnectionDialog = _IVsDataConnectionDialogFactory.CreateConnectionDialog()
 
         Try
-            _IVsDataExplorerConnectionManager = CType(Package.GetGlobalService(GetType(Microsoft.VisualStudio.Data.Services.IVsDataExplorerConnectionManager)), Microsoft.VisualStudio.Data.Services.IVsDataExplorerConnectionManager)
+            _IVsDataExplorerConnectionManager = CType(Microsoft.VisualStudio.Shell.Package.GetGlobalService(GetType(Microsoft.VisualStudio.Data.Services.IVsDataExplorerConnectionManager)), Microsoft.VisualStudio.Data.Services.IVsDataExplorerConnectionManager)
         Catch ex As Exception
             BuildOutputString(ex.ToString)
         End Try
