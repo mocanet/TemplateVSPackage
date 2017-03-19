@@ -13,12 +13,6 @@
 		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
 	</TemplateData>
 	<TemplateContent>
-		<References>
-			<Reference>
-				<Assembly>Moca</Assembly>
-			</Reference>
-		</References>
-
 		<ProjectItem SubType="Code" TargetFileName="I$fileinputname$.vb" OpenInEditor="true" OpenOrder="10" ReplaceParameters="true">IDaoTemplate.vb</ProjectItem>
 		<ProjectItem SubType="Code" TargetFileName="Impl\$fileinputname$.vb" OpenInEditor="true" OpenOrder="20" ReplaceParameters="true">DaoTemplate.vb</ProjectItem>
 	</TemplateContent>

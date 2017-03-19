@@ -92,7 +92,7 @@ Public Class EntityClassWizard
                 frm.ClassName = className
                 frm.Namespace = classNamespace
                 frm.gen.Language = language
-                If frm.ShowDialog() = Windows.Forms.DialogResult.Cancel Then
+                If frm.ShowDialog() = System.Windows.Forms.DialogResult.Cancel Then
                     Return
                 End If
 

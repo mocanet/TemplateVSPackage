@@ -228,5 +228,5 @@ Partial Class EntityWizardForm
     Friend WithEvents txtClassName As System.Windows.Forms.TextBox
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents chkAutoImplementedProperties As System.Windows.Forms.CheckBox
-    Friend WithEvents chkINotifyPropertyChanged As Windows.Forms.CheckBox
+    Friend WithEvents chkINotifyPropertyChanged As System.Windows.Forms.CheckBox
 End Class

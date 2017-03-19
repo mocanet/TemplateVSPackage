@@ -47,11 +47,11 @@ Public Class SeleniumPageWizardForm
             System.Windows.Forms.MessageBox.Show(ex.ToString)
         End Try
 
-        DialogResult = Windows.Forms.DialogResult.OK
+        DialogResult = System.Windows.Forms.DialogResult.OK
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        DialogResult = Windows.Forms.DialogResult.Cancel
+        DialogResult = System.Windows.Forms.DialogResult.Cancel
     End Sub
 
     Private Sub btnGet_Click(sender As Object, e As EventArgs) Handles btnGet.Click
@@ -60,19 +60,19 @@ Public Class SeleniumPageWizardForm
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         Try
-            Cursor = Windows.Forms.Cursors.WaitCursor
+            Cursor = System.Windows.Forms.Cursors.WaitCursor
             grdvElements.SuspendLayout()
 
             Dim target As New HtmlAnalyzer()
             Dim lst As IList(Of XElementRow)
             lst = target.GetPage(WebBrowser1.DocumentStream)
             grdvElements.DataSource = lst
-            grdvElements.AutoSizeColumnsMode = Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+            grdvElements.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Catch ex As Exception
             System.Windows.Forms.MessageBox.Show(ex.ToString)
         Finally
             grdvElements.ResumeLayout()
-            Cursor = Windows.Forms.Cursors.Default
+            Cursor = System.Windows.Forms.Cursors.Default
         End Try
     End Sub
 

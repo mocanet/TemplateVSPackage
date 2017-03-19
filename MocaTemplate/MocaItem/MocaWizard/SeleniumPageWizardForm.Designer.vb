@@ -241,16 +241,16 @@ Partial Class SeleniumPageWizardForm
 
     End Sub
 
-    Friend WithEvents grdvElements As Windows.Forms.DataGridView
-    Friend WithEvents btnGet As Windows.Forms.Button
-    Friend WithEvents txtURL As Windows.Forms.TextBox
-    Friend WithEvents Label1 As Windows.Forms.Label
-    Friend WithEvents btnCancel As Windows.Forms.Button
-    Friend WithEvents btnOK As Windows.Forms.Button
-    Friend WithEvents Label3 As Windows.Forms.Label
-    Friend WithEvents txtClassName As Windows.Forms.TextBox
-    Friend WithEvents Label2 As Windows.Forms.Label
-    Friend WithEvents txtNamespace As Windows.Forms.TextBox
-    Friend WithEvents SplitContainer1 As Windows.Forms.SplitContainer
-    Friend WithEvents WebBrowser1 As Windows.Forms.WebBrowser
+    Friend WithEvents grdvElements As System.Windows.Forms.DataGridView
+    Friend WithEvents btnGet As System.Windows.Forms.Button
+    Friend WithEvents txtURL As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents btnOK As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtClassName As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtNamespace As System.Windows.Forms.TextBox
+    Friend WithEvents SplitContainer1 As System.Windows.Forms.SplitContainer
+    Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
 End Class
