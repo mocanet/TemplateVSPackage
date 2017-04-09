@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E8CF27AD-3CAE-45DD-A8EB-09CCDB88F399}"
 	ProjectSection(SolutionItems) = preProject
@@ -84,6 +84,8 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SeleniumPage", "MocaTemplate\MocaItem\SeleniumPage\SeleniumPage.vbproj", "{70FE8FE9-3B42-499D-9886-CB89048AC9C6}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SeleniumPageWizard", "MocaTemplate\MocaItem\SeleniumPageWizard\SeleniumPageWizard.vbproj", "{A950EE5A-FF54-4EDE-AEEF-4918B3C53649}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWizard.Test", "MocaTemplate\MocaItem\MocaWizard.Test\MocaWizard.Test.vbproj", "{A5D14E19-CBF4-4A88-A6D2-91F8E0D9D332}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -175,6 +177,10 @@ Global
 		{A950EE5A-FF54-4EDE-AEEF-4918B3C53649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A950EE5A-FF54-4EDE-AEEF-4918B3C53649}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A950EE5A-FF54-4EDE-AEEF-4918B3C53649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D14E19-CBF4-4A88-A6D2-91F8E0D9D332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D14E19-CBF4-4A88-A6D2-91F8E0D9D332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D14E19-CBF4-4A88-A6D2-91F8E0D9D332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D14E19-CBF4-4A88-A6D2-91F8E0D9D332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,5 +208,6 @@ Global
 		{BFA0EDBC-0A09-42DA-9D3D-7652D258F59C} = {A67B1FD6-5205-4217-BB72-D1C47A891F60}
 		{70FE8FE9-3B42-499D-9886-CB89048AC9C6} = {A67B1FD6-5205-4217-BB72-D1C47A891F60}
 		{A950EE5A-FF54-4EDE-AEEF-4918B3C53649} = {A67B1FD6-5205-4217-BB72-D1C47A891F60}
+		{A5D14E19-CBF4-4A88-A6D2-91F8E0D9D332} = {A67B1FD6-5205-4217-BB72-D1C47A891F60}
 	EndGlobalSection
 EndGlobal

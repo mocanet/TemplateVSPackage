@@ -53,16 +53,6 @@ Public Class EntityWizardForm
             Me.WizardControl1.NextPage()
             Return True
         End If
-        ' Ctrl + S をボタンのショートカットキーとして処理する
-        If keyData = Keys.Control + Keys.S Then
-            Me.WizardControl1.NextPage()
-            Return True
-        End If
-        ' Ctrl + O をボタンのショートカットキーとして処理する
-        If keyData = Keys.Control + Keys.O Then
-            Me.WizardControl1.NextPage()
-            Return True
-        End If
 
         Return MyBase.ProcessCmdKey(msg, keyData)
     End Function

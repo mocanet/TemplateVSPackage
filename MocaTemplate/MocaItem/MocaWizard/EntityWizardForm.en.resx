@@ -131,11 +131,17 @@
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 15</value>
   </data>
-  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 372</value>
+  <data name="chkINotifyPropertyChanged.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 11.25pt</value>
   </data>
-  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 372</value>
+  <data name="chkINotifyPropertyChanged.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkINotifyPropertyChanged.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 24</value>
+  </data>
+  <data name="chkINotifyPropertyChanged.Text" xml:space="preserve">
+    <value>INotifyPropertyChanged Implements</value>
   </data>
   <data name="chkAutoImplementedProperties.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 11.25pt</value>
@@ -176,16 +182,10 @@
   <data name="txtNamespace.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 42</value>
   </data>
-  <data name="chkINotifyPropertyChanged.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 11.25pt</value>
+  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 372</value>
   </data>
-  <data name="chkINotifyPropertyChanged.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 24</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.Text" xml:space="preserve">
-    <value>INotifyPropertyChanged Implements</value>
+  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 374</value>
   </data>
 </root>

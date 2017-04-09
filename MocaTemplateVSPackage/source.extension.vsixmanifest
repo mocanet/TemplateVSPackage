@@ -7,7 +7,8 @@
     <MoreInfo>http://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290</MoreInfo>
     <License>License.txt</License>
     <ReleaseNotes>ReleaseNote.rtf</ReleaseNotes>
-    <Icon>MocaNET.png</Icon>
+    <Icon>MocaNET32.png</Icon>
+    <PreviewImage>MocaNET.png</PreviewImage>
   </Metadata>
   <Installation>
     <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Pro" />

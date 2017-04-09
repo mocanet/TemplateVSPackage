@@ -184,7 +184,7 @@
     <value>22, 54</value>
   </data>
   <data name="&gt;&gt;wzpGenerateSettings.Type" xml:space="preserve">
-    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.9.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
   </data>
   <data name="&gt;&gt;Label1.Name" xml:space="preserve">
     <value>Label1</value>
@@ -346,7 +346,7 @@
     <value>Verdana, 11.25pt</value>
   </data>
   <data name="&gt;&gt;wzpExecSQL.Type" xml:space="preserve">
-    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.9.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
   </data>
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
@@ -529,7 +529,7 @@
     <value>91, 18</value>
   </data>
   <data name="&gt;&gt;WizardControl1.Type" xml:space="preserve">
-    <value>AeroWizard.WizardControl, AeroWizard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+    <value>AeroWizard.WizardControl, AeroWizard, Version=2.1.9.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
   </data>
   <data name="txtTableName.Size" type="System.Drawing.Size, System.Drawing">
     <value>279, 26</value>
