@@ -7,7 +7,7 @@ Namespace Db
 	''' $fileinputname$ データアクセスインタフェース
     ''' </summary>
     ''' <remarks></remarks>
-    <Dao("app.configのconnectionStringsキー", GetType(Impl.$fileinputname$))> _
+    <Dao($ConnectionSettingsName$, GetType(Impl.$fileinputname$))> _
     Public Interface I$fileinputname$
 
     End Interface

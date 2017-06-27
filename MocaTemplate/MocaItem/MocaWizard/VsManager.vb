@@ -162,6 +162,10 @@ Public Class VsManager
 
         Try
             _IVsDataExplorerConnectionManager = CType(Microsoft.VisualStudio.Shell.Package.GetGlobalService(GetType(Microsoft.VisualStudio.Data.Services.IVsDataExplorerConnectionManager)), Microsoft.VisualStudio.Data.Services.IVsDataExplorerConnectionManager)
+
+            If _IVsDataExplorerConnectionManager Is Nothing Then
+                Throw New InvalidOperationException("Microsoft.VisualStudio.Data.Services.IVsDataExplorerConnectionManager is Null")
+            End If
         Catch ex As Exception
             BuildOutputString(ex.ToString)
         End Try

@@ -28,17 +28,22 @@ Partial Class EntityWizardForm
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.WizardControl1 = New AeroWizard.WizardControl()
         Me.wzpExecSQL = New AeroWizard.WizardPage()
+        Me.cboTable = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboConnectionStrings = New System.Windows.Forms.ComboBox()
         Me.btnAddDataSource = New System.Windows.Forms.Button()
         Me.wzpGenerateSettings = New AeroWizard.WizardPage()
+        Me.lblConnectionSettingsName = New System.Windows.Forms.Label()
+        Me.txtConnectionSettingsName = New System.Windows.Forms.TextBox()
+        Me.chkDefProp = New System.Windows.Forms.CheckBox()
         Me.chkINotifyPropertyChanged = New System.Windows.Forms.CheckBox()
         Me.chkAutoImplementedProperties = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtClassName = New System.Windows.Forms.TextBox()
         Me.chkTable = New System.Windows.Forms.CheckBox()
-        Me.txtTableName = New System.Windows.Forms.TextBox()
+        Me.txtDefName = New System.Windows.Forms.TextBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.chkDifinition = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -60,12 +65,25 @@ Partial Class EntityWizardForm
         'wzpExecSQL
         '
         resources.ApplyResources(Me.wzpExecSQL, "wzpExecSQL")
+        Me.wzpExecSQL.Controls.Add(Me.cboTable)
+        Me.wzpExecSQL.Controls.Add(Me.Label4)
         Me.wzpExecSQL.Controls.Add(Me.RichTextBox1)
         Me.wzpExecSQL.Controls.Add(Me.Label1)
         Me.wzpExecSQL.Controls.Add(Me.cboConnectionStrings)
         Me.wzpExecSQL.Controls.Add(Me.btnAddDataSource)
         Me.wzpExecSQL.Name = "wzpExecSQL"
         Me.wzpExecSQL.NextPage = Me.wzpGenerateSettings
+        '
+        'cboTable
+        '
+        resources.ApplyResources(Me.cboTable, "cboTable")
+        Me.cboTable.FormattingEnabled = True
+        Me.cboTable.Name = "cboTable"
+        '
+        'Label4
+        '
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Name = "Label4"
         '
         'RichTextBox1
         '
@@ -94,18 +112,40 @@ Partial Class EntityWizardForm
         'wzpGenerateSettings
         '
         resources.ApplyResources(Me.wzpGenerateSettings, "wzpGenerateSettings")
+        Me.wzpGenerateSettings.Controls.Add(Me.lblConnectionSettingsName)
+        Me.wzpGenerateSettings.Controls.Add(Me.txtConnectionSettingsName)
+        Me.wzpGenerateSettings.Controls.Add(Me.chkDefProp)
         Me.wzpGenerateSettings.Controls.Add(Me.chkINotifyPropertyChanged)
         Me.wzpGenerateSettings.Controls.Add(Me.chkAutoImplementedProperties)
         Me.wzpGenerateSettings.Controls.Add(Me.Label3)
         Me.wzpGenerateSettings.Controls.Add(Me.txtClassName)
         Me.wzpGenerateSettings.Controls.Add(Me.chkTable)
-        Me.wzpGenerateSettings.Controls.Add(Me.txtTableName)
+        Me.wzpGenerateSettings.Controls.Add(Me.txtDefName)
         Me.wzpGenerateSettings.Controls.Add(Me.DataGridView2)
         Me.wzpGenerateSettings.Controls.Add(Me.chkDifinition)
         Me.wzpGenerateSettings.Controls.Add(Me.Label2)
         Me.wzpGenerateSettings.Controls.Add(Me.txtNamespace)
         Me.wzpGenerateSettings.IsFinishPage = True
         Me.wzpGenerateSettings.Name = "wzpGenerateSettings"
+        '
+        'lblConnectionSettingsName
+        '
+        resources.ApplyResources(Me.lblConnectionSettingsName, "lblConnectionSettingsName")
+        Me.lblConnectionSettingsName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.lblConnectionSettingsName.Name = "lblConnectionSettingsName"
+        '
+        'txtConnectionSettingsName
+        '
+        resources.ApplyResources(Me.txtConnectionSettingsName, "txtConnectionSettingsName")
+        Me.txtConnectionSettingsName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtConnectionSettingsName.Name = "txtConnectionSettingsName"
+        '
+        'chkDefProp
+        '
+        resources.ApplyResources(Me.chkDefProp, "chkDefProp")
+        Me.chkDefProp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.chkDefProp.Name = "chkDefProp"
+        Me.chkDefProp.UseVisualStyleBackColor = True
         '
         'chkINotifyPropertyChanged
         '
@@ -140,11 +180,11 @@ Partial Class EntityWizardForm
         Me.chkTable.Name = "chkTable"
         Me.chkTable.UseVisualStyleBackColor = True
         '
-        'txtTableName
+        'txtDefName
         '
-        resources.ApplyResources(Me.txtTableName, "txtTableName")
-        Me.txtTableName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtTableName.Name = "txtTableName"
+        resources.ApplyResources(Me.txtDefName, "txtDefName")
+        Me.txtDefName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.txtDefName.Name = "txtDefName"
         '
         'DataGridView2
         '
@@ -221,7 +261,7 @@ Partial Class EntityWizardForm
     Friend WithEvents cboConnectionStrings As System.Windows.Forms.ComboBox
     Friend WithEvents wzpGenerateSettings As AeroWizard.WizardPage
     Friend WithEvents chkTable As System.Windows.Forms.CheckBox
-    Friend WithEvents txtTableName As System.Windows.Forms.TextBox
+    Friend WithEvents txtDefName As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
     Friend WithEvents chkDifinition As System.Windows.Forms.CheckBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -231,4 +271,9 @@ Partial Class EntityWizardForm
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents chkAutoImplementedProperties As System.Windows.Forms.CheckBox
     Friend WithEvents chkINotifyPropertyChanged As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDefProp As Windows.Forms.CheckBox
+    Friend WithEvents cboTable As Windows.Forms.ComboBox
+    Friend WithEvents Label4 As Windows.Forms.Label
+    Friend WithEvents lblConnectionSettingsName As Windows.Forms.Label
+    Friend WithEvents txtConnectionSettingsName As Windows.Forms.TextBox
 End Class

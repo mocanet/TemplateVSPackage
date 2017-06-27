@@ -59,5 +59,14 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  &quot;Insert the connectionStrings key of app.config&quot; に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property TableAttributeArg1() As String
+            Get
+                Return ResourceManager.GetString("TableAttributeArg1", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

@@ -78,7 +78,7 @@
 		</Project>
 	</TemplateContent>
 	<WizardExtension>
-		<Assembly>MocaWizard, Version=1.10.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
+		<Assembly>MocaWizard, Version=1.11.0.0, Culture=neutral, PublicKeyToken=12ab0d53c0411d73</Assembly>
 		<FullClassName>Moca.TemplateWizard.WebNuGetPackageWizard</FullClassName>
 	</WizardExtension>
 	<!--

@@ -123,16 +123,56 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="WizardControl1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="RichTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
   <data name="RichTextBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>580, 290</value>
   </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 15</value>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="cboConnectionStrings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="btnAddDataSource.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="btnAddDataSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 17</value>
+  </data>
+  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 374</value>
+  </data>
+  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 374</value>
+  </data>
+  <data name="chkDefProp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkDefProp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkDefProp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="chkDefProp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkDefProp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 77</value>
+  </data>
+  <data name="chkDefProp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 19</value>
+  </data>
+  <data name="chkDefProp.Text" xml:space="preserve">
+    <value>Definition Field</value>
   </data>
   <data name="chkINotifyPropertyChanged.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 11.25pt</value>
+    <value>Meiryo UI, 9pt</value>
   </data>
   <data name="chkINotifyPropertyChanged.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -144,7 +184,7 @@
     <value>INotifyPropertyChanged Implements</value>
   </data>
   <data name="chkAutoImplementedProperties.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 11.25pt</value>
+    <value>Meiryo UI, 9pt</value>
   </data>
   <data name="chkAutoImplementedProperties.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 147</value>
@@ -155,37 +195,58 @@
   <data name="chkAutoImplementedProperties.Text" xml:space="preserve">
     <value>Auto-Implemented Properties</value>
   </data>
-  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 78</value>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
-  <data name="txtClassName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 105</value>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 15</value>
+  </data>
+  <data name="txtClassName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="txtClassName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 23</value>
+  </data>
+  <data name="chkTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
   <data name="chkTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 77</value>
+    <value>346, 107</value>
   </data>
-  <data name="txtTableName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 42</value>
+  <data name="chkTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 19</value>
+  </data>
+  <data name="txtTableName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="txtTableName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 23</value>
   </data>
   <data name="DataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 105</value>
+    <value>322, 135</value>
   </data>
   <data name="DataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 250</value>
+    <value>279, 220</value>
+  </data>
+  <data name="chkDifinition.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
   <data name="chkDifinition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 18</value>
+    <value>366, 18</value>
   </data>
-  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 19</value>
+  <data name="chkDifinition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 19</value>
   </data>
-  <data name="txtNamespace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 42</value>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
-  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 372</value>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 15</value>
   </data>
-  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 374</value>
+  <data name="txtNamespace.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="txtNamespace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 23</value>
   </data>
 </root>

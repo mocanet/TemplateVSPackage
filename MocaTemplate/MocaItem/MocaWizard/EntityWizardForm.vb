@@ -37,13 +37,16 @@ Public Class EntityWizardForm
     Private Sub EntityWizardForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.txtNamespace.Text = Me.Namespace
         Me.txtClassName.Text = Me.ClassName
-        Me.txtTableName.Text = Me.ClassName
-        Me.chkAutoImplementedProperties.Checked = True
-        Me.txtTableName.Enabled = False
+        Me.txtDefName.Text = Me.ClassName
+        Me.chkINotifyPropertyChanged.Checked = True
 
+        _setDef(False)
         _setCbo()
         If Not String.IsNullOrEmpty(Me.Properties.SelectedConnection) Then
             Me.cboConnectionStrings.Text = Me.Properties.SelectedConnection
+        End If
+        If Not String.IsNullOrEmpty(Me.Properties.ConnectionSettingsName) Then
+            Me.txtConnectionSettingsName.Text = Properties.ConnectionSettingsName
         End If
     End Sub
 
@@ -56,6 +59,30 @@ Public Class EntityWizardForm
 
         Return MyBase.ProcessCmdKey(msg, keyData)
     End Function
+
+    Private Sub cboConnectionStrings_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboConnectionStrings.SelectedIndexChanged
+        Dim tables As DbInfoTableCollection
+
+        If Not _canConnectDb() Then
+            System.Windows.Forms.MessageBox.Show("Not connected to the database." & vbCrLf & "Please set it with a data source again.")
+            Return
+        End If
+
+        cboTable.DataSource = Nothing
+
+        If _dao Is Nothing Then
+            Return
+        End If
+        If _dao.Helper Is Nothing Then
+            Return
+        End If
+
+        tables = _dao.Helper.GetSchemaTables()
+
+        cboTable.DataSource = tables.Values.ToList
+        cboTable.DisplayMember = "Name"
+        cboTable.ValueMember = "Name"
+    End Sub
 
     Private Sub btnAddDataSource_Click(sender As Object, e As EventArgs) Handles btnAddDataSource.Click
         If VsMgr.AddDataConnection() Is Nothing Then
@@ -77,15 +104,19 @@ Public Class EntityWizardForm
             Return
         End If
 
-        If Me.RichTextBox1.Text.Length = 0 Then
-            System.Windows.Forms.MessageBox.Show("Input SQL")
-            Me.RichTextBox1.Focus()
-            e.Cancel = True
-            Return
-        End If
-
         Dim sql As String
-        sql = Me.RichTextBox1.Text
+
+        If Me.RichTextBox1.Text.Length = 0 Then
+            If cboTable.Text.Length = 0 Then
+                System.Windows.Forms.MessageBox.Show("Input SQL")
+                Me.RichTextBox1.Focus()
+                e.Cancel = True
+                Return
+            End If
+            sql = String.Format("SELECT * FROM {0}", cboTable.Text)
+        Else
+            sql = Me.RichTextBox1.Text
+        End If
 
         Try
             _dt = _dao.Go(sql)
@@ -104,9 +135,9 @@ Public Class EntityWizardForm
             Return
         End If
         If Me.chkDifinition.Checked Then
-            If Me.txtTableName.Text.Length = 0 Then
+            If Me.txtDefName.Text.Length = 0 Then
                 System.Windows.Forms.MessageBox.Show("Input TableName Name")
-                Me.txtTableName.Focus()
+                Me.txtDefName.Focus()
                 e.Cancel = True
                 Return
             End If
@@ -122,8 +153,11 @@ Public Class EntityWizardForm
             gen.AutoImplementedProperties = Me.chkAutoImplementedProperties.Checked
             gen.INotifyPropertyChangedBase = Me.chkINotifyPropertyChanged.Checked
             gen.TableProperty = Me.chkTable.Checked
+            gen.DefField = Me.chkDefProp.Checked
+            gen.ConnectionSettingsName = Me.txtConnectionSettingsName.Text
             If Me.chkDifinition.Checked Then
-                gen.TableName = Me.txtTableName.Text
+                gen.DefName = Me.txtDefName.Text
+                gen.TableName = Me.cboTable.Text
                 gen.Generate(_dt.Columns, dt.Rows)
             Else
                 gen.Generate(_dt.Columns)
@@ -134,8 +168,21 @@ Public Class EntityWizardForm
         End Try
     End Sub
 
+    Private Sub chkINotifyPropertyChanged_CheckedChanged(sender As Object, e As EventArgs) Handles chkINotifyPropertyChanged.CheckedChanged
+        chkAutoImplementedProperties.Enabled = Not chkINotifyPropertyChanged.Checked
+    End Sub
+
     Private Sub chkDifinition_CheckedChanged(sender As Object, e As EventArgs) Handles chkDifinition.CheckedChanged
-        Me.txtTableName.Enabled = Me.chkDifinition.Checked
+        _setDef(chkDifinition.Checked)
+    End Sub
+
+    Private Sub _setDef(ByVal value As Boolean)
+        txtDefName.Visible = value
+        chkDefProp.Visible = value
+        chkTable.Visible = value
+        DataGridView2.Visible = value
+        lblConnectionSettingsName.Visible = value
+        txtConnectionSettingsName.Visible = value
     End Sub
 
     Private Sub _setCbo()

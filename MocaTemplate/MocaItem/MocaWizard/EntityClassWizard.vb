@@ -111,6 +111,7 @@ Public Class EntityClassWizard
                 fileWindow.Activate()
 
                 prop.SelectedConnection = frm.cboConnectionStrings.Text
+                prop.ConnectionSettingsName = frm.txtConnectionSettingsName.Text
 
                 Using sw As New System.IO.StreamWriter(configName, False, New System.Text.UTF8Encoding(False))
                     Dim serializer As New System.Xml.Serialization.XmlSerializer(GetType(EntityWizardProperties))

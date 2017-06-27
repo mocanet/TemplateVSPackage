@@ -110,24 +110,6 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("2.0.0")>  _
-        Public ReadOnly Property MocaNETWinVer() As String
-            Get
-                Return CType(Me("MocaNETWinVer"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("2.0.0")>  _
-        Public ReadOnly Property MocaNETWebAppVer() As String
-            Get
-                Return CType(Me("MocaNETWebAppVer"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("AspNetWebApi")>  _
         Public ReadOnly Property AspNetWebApi() As String
             Get
@@ -173,7 +155,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("2.0.3")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("2.0.8")>  _
         Public ReadOnly Property Log4netVer() As String
             Get
                 Return CType(Me("Log4netVer"),String)
@@ -191,7 +173,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1.6.0")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1.9.0")>  _
         Public ReadOnly Property MSBuildExtensionPackVer() As String
             Get
                 Return CType(Me("MSBuildExtensionPackVer"),String)
@@ -218,7 +200,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("3.0.0")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3.3.2")>  _
         Public ReadOnly Property MocaNETWindowsFormProjectVer() As String
             Get
                 Return CType(Me("MocaNETWindowsFormProjectVer"),String)
@@ -227,7 +209,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("3.0.0")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3.1.1")>  _
         Public ReadOnly Property MocaNETWebFormsProjectVer() As String
             Get
                 Return CType(Me("MocaNETWebFormsProjectVer"),String)

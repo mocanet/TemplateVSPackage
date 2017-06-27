@@ -121,30 +121,44 @@
     <value>前のページに戻る</value>
   </data>
   <data name="WizardControl1.CancelButtonText" xml:space="preserve">
-    <value>キャンセル</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="WizardControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>キャンセル(&amp;C)</value>
   </data>
   <data name="WizardControl1.FinishButtonText" xml:space="preserve">
-    <value>完了</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="WizardControl1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+    <value>完了(&amp;F)</value>
   </data>
   <data name="WizardControl1.NextButtonText" xml:space="preserve">
-    <value>次へ</value>
+    <value>次へ(&amp;N)</value>
   </data>
-  <data name="RichTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 279</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cboTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 46</value>
+  </data>
+  <data name="cboTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 23</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 49</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 15</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>テーブル</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 15</value>
+    <value>59, 15</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>データ接続</value>
+  </data>
+  <data name="cboConnectionStrings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 17</value>
+  </data>
+  <data name="cboConnectionStrings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 23</value>
+  </data>
+  <data name="btnAddDataSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 17</value>
   </data>
   <data name="btnAddDataSource.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -152,35 +166,48 @@
   <data name="btnAddDataSource.Text" xml:space="preserve">
     <value>新しい接続…</value>
   </data>
-  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 372</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblConnectionSettingsName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="wzpGenerateSettings.Text" xml:space="preserve">
-    <value>コード設定</value>
+  <data name="lblConnectionSettingsName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
-  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 372</value>
+  <data name="lblConnectionSettingsName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="wzpExecSQL.Text" xml:space="preserve">
-    <value>SQLステートメント実行</value>
+  <data name="lblConnectionSettingsName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 73</value>
   </data>
-  <data name="WizardControl1.Title" xml:space="preserve">
-    <value>エンティティコード ウィザード</value>
+  <data name="lblConnectionSettingsName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 15</value>
+  </data>
+  <data name="lblConnectionSettingsName.Text" xml:space="preserve">
+    <value>設定の接続文字列名称</value>
+  </data>
+  <data name="txtConnectionSettingsName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 91</value>
+  </data>
+  <data name="chkDefProp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 144</value>
+  </data>
+  <data name="chkDefProp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 24</value>
+  </data>
+  <data name="chkDefProp.Text" xml:space="preserve">
+    <value>カラム定義フィールド</value>
   </data>
   <data name="chkINotifyPropertyChanged.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 172</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 24</value>
+    <value>23, 144</value>
   </data>
   <data name="chkINotifyPropertyChanged.Text" xml:space="preserve">
     <value>NotifyPropertyChanged実装</value>
   </data>
-  <data name="chkAutoImplementedProperties.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
   <data name="chkAutoImplementedProperties.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="chkAutoImplementedProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 174</value>
   </data>
   <data name="chkAutoImplementedProperties.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 19</value>
@@ -195,11 +222,8 @@
   <data name="Label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
-  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 78</value>
+    <value>20, 73</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 15</value>
@@ -210,23 +234,14 @@
   <data name="txtClassName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
-  <data name="txtClassName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
   <data name="txtClassName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 105</value>
-  </data>
-  <data name="txtClassName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 23</value>
+    <value>23, 91</value>
   </data>
   <data name="chkTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
-  <data name="chkTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
   <data name="chkTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 77</value>
+    <value>322, 174</value>
   </data>
   <data name="chkTable.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 19</value>
@@ -237,26 +252,14 @@
   <data name="chkTable.Text" xml:space="preserve">
     <value>テーブルプロパティ</value>
   </data>
-  <data name="txtTableName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
-  </data>
-  <data name="txtTableName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
-  <data name="txtTableName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 42</value>
-  </data>
-  <data name="txtTableName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 23</value>
-  </data>
-  <data name="txtTableName.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="txtDefName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
   <data name="DataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 105</value>
+    <value>322, 203</value>
   </data>
   <data name="DataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 250</value>
+    <value>279, 168</value>
   </data>
   <data name="DataGridView2.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -264,11 +267,8 @@
   <data name="chkDifinition.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
-  <data name="chkDifinition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
   <data name="chkDifinition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 18</value>
+    <value>322, 18</value>
   </data>
   <data name="chkDifinition.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 19</value>
@@ -282,25 +282,81 @@
   <data name="Label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
-  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 19</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 15</value>
   </data>
   <data name="txtNamespace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
-  <data name="txtNamespace.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 12world</value>
-  </data>
   <data name="txtNamespace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 42</value>
+    <value>23, 37</value>
   </data>
-  <data name="txtNamespace.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 23</value>
+  <data name="wzpGenerateSettings.Text" xml:space="preserve">
+    <value>コード設定</value>
+  </data>
+  <data name="wzpExecSQL.Text" xml:space="preserve">
+    <value>SQLステートメント実行</value>
+  </data>
+  <data name="WizardControl1.Title" xml:space="preserve">
+    <value>エンティティコード ウィザード</value>
+  </data>
+  <data name="WizardControl1.TitleIcon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////Jv7z///+ei43////i3+Tw6+XAt7uwoqK0paD///+7sLOw
+        oqK5qqf///+gjI6xpaWyo6L6+vm/srDNxcb///3///////+fjIvX0tSkk5KpmZqjkpLq5eP////Dt7X/
+        //+nk4////+MeHvLvbnX1N3Fura5qaX////MyM7EubjAr6v////JwseUgYL///////+Kc3b////z8fGi
+        kpP///v///+rn6SXg4Cun6H///////////////////+bhoL///+yoJyrnqL///+gj47i4Oifjoz07ej/
+        //////9sVFn58e3///////////+woaO9srGNdnT///////+klJT////k5Oi8q6i1q6qvoaL///3/////
+        //////////+eiof///+2p6OllZX////Bub7As7ff19KRe3v///+XiI36+PaOd3X///+djJHt7eysmZb/
+        //+ah4f///////+klJX///+Hb2////+rn561qKqrnZqvpKSompn///////+eiof///9rUFHz7en/////
+        //9sU1zl2tL3+Pqsnp7q5eP////y8fOtn5/m39z////Z09avoKD28/H///////+rnJyaiYf+/Pr///+p
+        nJutnp////////////////////+hjYn///+Ea2j///////////+hkZjl3tf/////////////////////
+        //////////////////////////////+4r7LGtrL///////+7sbHFvL6ml5SrnZ2qnZytoKCuoqKEbWqu
+        oqL////////////////////////////////////////////////////////v9vzs8vj+////////////
+        ///////////////////////////////////////////////////////////////////////z8vLX2Nrp
+        7/X9/f3///////////////+vjW95MACBQAXCvLn+////////////////////////////////////////
+        //////////////////////////////////////+meE9zJACBQwzv9v7////////////k2c9zJACDPAB+
+        NAB7MwDZ3OH/////////////////////////////////////////////////////////////////////
+        //////98NgCEPwB6LgDKxML////////////Tvqt3KgCoiGyrg158LwCaclD6///////////////l3dXg
+        5Orv9vz+///////////////////////////////////////////y7ux3KwCDPQCBOQCVaUH3/v//////
+        ///9//9zJgB/OwDp8/57MQB6MADh5uz////////////p3tNqGACGTBnf4+j/////////////////////
+        ///////////////////dzb94LACYZTiEQAB6LQDJx8b///////////+hb0B7LgCtlYGpgFp5LAC5ppj/
+        //////////////+neEt4KgCmi3L////////////////////////////////////////YxbV4KwCabkXF
+        rZd5LQCGSxbo8fn////////49vNzJwB/OACqj3l8MACjfl7////////////////x6+Z1KACERg7x+P//
+        ///////////////////////////////////ezsB4KwCPWyv///+MTRJ8LwCZdFPy+v////////+/n4B5
+        LQCEQACBOQCZbUb///////////////////+IRwt3KQDd3uH/////////////////////////////////
+        ///18u91KQB/PQDw+v////93LQB7LgChhGzw+P////////+XYCx+NgCBOgCcc03/////////////////
+        //+ldUp3KgDLwbr///////////////////////////////////////9+OAB6LQDIw7/////r4tl0KAB7
+        LgCVakXc4+r9//////+NURqBOgCJTxvX3eT///////////////+gbkF3KQDRyMH/////////////////
+        //////////////////////+xiGJ7MACVaUL2/v/////u5d55MQB7LgB/OgCffWCwl4KFQwV+NgB+NAB/
+        OwC4rKTs9fz+///t8PR7MwB2KwDz+Pz////////////////////////////////////////5+PZ0JwB6
+        LwDBu7j///////////+icUJzJQB4KwB3KgBzJAC4lXeoe1F1JwB6LQCIThiXa0R/OgB+NQCkeVX/////
+        //////////////////////////////////////////+1j2t6LwB/OwDS1tz////////////49vPKr5fA
+        n4Dl2c/////////ayLeHRgl7MACCOwCDPgB2KwDx8fT/////////////////////////////////////
+        //////////////+MUBV9MwCAPgDHxcb5//////////////////////////////////////+8oo1/NwB3
+        KgDDqpX///////////////////////////////////////////////////////////+JSg57MAB7MQCe
+        fGDX2t/y+f/+///////////////5///c29qaa0J7MAB2KgCuiGb/////////////////////////////
+        //////////////////////////////////////+neU50JwB8MQB7MQCNWSmgfV6qjnaoi3CddlOJThl5
+        LQB7MAB1KQDEqZH/////////////////////////////////////////////////////////////////
+        ///////////p4NabZTNzKAB4LAB5LAB5LAB5LAB5LAB4KwB3LQCpfFP39vb/////////////////////
+        ///////////////////////////////////////////////////////////////////////XxLG/nn+0
+        jmm3kW3Eponf0MP/////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</value>
   </data>
 </root>

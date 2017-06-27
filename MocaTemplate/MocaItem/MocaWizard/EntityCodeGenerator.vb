@@ -23,7 +23,7 @@ Public Class EntityCodeGenerator
     Private _namespace As String
     Private _className As String
     Private _tableProperty As Boolean
-    Private _tableName As String
+    Private _defName As String
     Private _compileUnit As CodeCompileUnit
 
     Private _dump As CodeDomProvider
@@ -71,16 +71,28 @@ Public Class EntityCodeGenerator
         End Set
     End Property
 
-    Public Property TableName() As System.String
+    Public Property DefName() As System.String
         Get
-            Return Me._tableName
+            Return Me._defName
         End Get
         Set(ByVal value As System.String)
-            Me._tableName = value
+            Me._defName = value
         End Set
     End Property
 
     Public Property INotifyPropertyChangedBase As Boolean
+
+    Public Property DefField As Boolean
+
+    Private ReadOnly Property DefinitionName As String
+        Get
+            Return String.Format("I{0}Definition", _defName)
+        End Get
+    End Property
+
+    Public Property TableName As String
+
+    Public Property ConnectionSettingsName As String
 
 #End Region
 
@@ -140,10 +152,11 @@ Public Class EntityCodeGenerator
             class1.BaseTypes.Add(GetType(System.ComponentModel.INotifyPropertyChanged))
         End If
         cn.Types.Add(class1)
-        _createEntity(class1, columns)
+        _createEntity(class1, columns, (difinition IsNot Nothing))
 
         If Me.INotifyPropertyChangedBase Then
             Dim ev As CodeMemberEvent = New CodeMemberEvent()
+            ev.StartDirectives.Add(_createRegionStart("PropertyChanged"))
             ev.Name = "PropertyChanged"
             ev.Attributes = MemberAttributes.Public
             ev.ImplementationTypes.Add(GetType(System.ComponentModel.INotifyPropertyChanged))
@@ -151,6 +164,7 @@ Public Class EntityCodeGenerator
             class1.Members.Add(ev)
 
             Dim mtd As CodeMemberMethod = New CodeMemberMethod()
+            mtd.EndDirectives.Add(_createRegionEnd())
             mtd.Name = "OnPropertyChanged"
             mtd.Attributes = MemberAttributes.Family
             class1.Members.Add(mtd)
@@ -174,7 +188,7 @@ Public Class EntityCodeGenerator
         End If
 
         ' 以降はテーブル定義作成
-        class1 = _createInterface(_tableName)
+        class1 = _createInterface(_defName)
         cn.Types.Add(class1)
 
         class1.StartDirectives.Add(_createRegionStart("Definition"))
@@ -188,10 +202,25 @@ Public Class EntityCodeGenerator
     ''' <param name="typ"></param>
     ''' <param name="columns"></param>
     ''' <remarks></remarks>
-    Private Sub _createEntity(ByVal typ As CodeTypeDeclaration, ByVal columns As DataColumnCollection)
+    Private Sub _createEntity(ByVal typ As CodeTypeDeclaration, ByVal columns As DataColumnCollection, ByVal isDef As Boolean)
         Dim aryField As New List(Of CodeMemberField)
         Dim aryProperty As New List(Of CodeMemberProperty)
         Dim arySnippet As New List(Of CodeSnippetTypeMember)
+        Dim fieldCount As Integer = columns.Count - 1
+        Dim columnCount As Integer = columns.Count - 1
+
+
+        If isDef Then
+            If Me.DefField Then
+                Dim field As CodeMemberField
+                field = _createField("_def")
+                field.Attributes = MemberAttributes.Static
+                field.Type = New CodeTypeReference(DefinitionName)
+                aryField.Add(field)
+                typ.Members.Add(field)
+                fieldCount += 1
+            End If
+        End If
 
         For Each col As DataColumn In columns
             Dim field As CodeMemberField
@@ -229,16 +258,16 @@ Public Class EntityCodeGenerator
         If Me.AutoImplementedProperties AndAlso Not Me.INotifyPropertyChangedBase Then
             If Me.Language = LanguageType.VisualBasic Then
                 aryField(0).StartDirectives.Add(_createRegionStart("Property"))
-                aryField(columns.Count - 1).EndDirectives.Add(_createRegionEnd())
+                aryField(fieldCount).EndDirectives.Add(_createRegionEnd())
             Else
                 arySnippet(0).StartDirectives.Add(_createRegionStart("Property"))
-                arySnippet(columns.Count - 1).EndDirectives.Add(_createRegionEnd())
+                arySnippet(columnCount).EndDirectives.Add(_createRegionEnd())
             End If
         Else
             aryField(0).StartDirectives.Add(_createRegionStart("Declare"))
-            aryField(columns.Count - 1).EndDirectives.Add(_createRegionEnd())
+            aryField(fieldCount).EndDirectives.Add(_createRegionEnd())
             aryProperty(0).StartDirectives.Add(_createRegionStart("Property"))
-            aryProperty(columns.Count - 1).EndDirectives.Add(_createRegionEnd())
+            aryProperty(columnCount).EndDirectives.Add(_createRegionEnd())
         End If
     End Sub
 
@@ -326,7 +355,7 @@ Public Class EntityCodeGenerator
     ''' <remarks></remarks>
     Private Function _createType(ByVal name As String) As CodeTypeDeclaration
         Dim class1 As CodeTypeDeclaration = New CodeTypeDeclaration(name)
-        _addComment(class1, name & " エンティティ")
+        _addComment(class1, name & " Entity")
         Return class1
     End Function
 
@@ -337,10 +366,12 @@ Public Class EntityCodeGenerator
     ''' <returns></returns>
     ''' <remarks></remarks>
     Private Function _createInterface(ByVal name As String) As CodeTypeDeclaration
-        Dim table As String = String.Format("I{0}Definition", name)
+        Dim table As String = DefinitionName
         Dim class1 As CodeTypeDeclaration = New CodeTypeDeclaration(table)
-        _addComment(class1, name & " エンティティ定義")
-        class1.CustomAttributes.Add(New CodeAttributeDeclaration("Table", New CodeAttributeArgument(New CodeSnippetExpression("""app.configのconnectionStringsキーを入れる""")), New CodeAttributeArgument(New CodeSnippetExpression("""" & name & """"))))
+        Dim arg1 As String = IIf(String.IsNullOrEmpty(ConnectionSettingsName), My.Resources.TableAttributeArg1, ConnectionSettingsName)
+        Dim arg2 As String = """" & IIf(String.IsNullOrEmpty(TableName), name, TableName) & """"
+        _addComment(class1, name & " Entity definition")
+        class1.CustomAttributes.Add(New CodeAttributeDeclaration("Table", New CodeAttributeArgument(New CodeSnippetExpression(arg1)), New CodeAttributeArgument(New CodeSnippetExpression(arg2))))
         class1.IsInterface = True
         Return class1
     End Function

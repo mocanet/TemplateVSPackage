@@ -20,12 +20,6 @@
     <Setting Name="ElmahVer" Type="System.String" Scope="Application">
       <Value Profile="(Default)">1.2.2</Value>
     </Setting>
-    <Setting Name="MocaNETWinVer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">2.0.0</Value>
-    </Setting>
-    <Setting Name="MocaNETWebAppVer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">2.0.0</Value>
-    </Setting>
     <Setting Name="AspNetWebApi" Type="System.String" Scope="Application">
       <Value Profile="(Default)">AspNetWebApi</Value>
     </Setting>
@@ -42,13 +36,13 @@
       <Value Profile="(Default)">log4net</Value>
     </Setting>
     <Setting Name="Log4netVer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">2.0.3</Value>
+      <Value Profile="(Default)">2.0.8</Value>
     </Setting>
     <Setting Name="MSBuildExtensionPack" Type="System.String" Scope="Application">
       <Value Profile="(Default)">MSBuild.Extension.Pack</Value>
     </Setting>
     <Setting Name="MSBuildExtensionPackVer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">1.6.0</Value>
+      <Value Profile="(Default)">1.9.0</Value>
     </Setting>
     <Setting Name="AjaxMin" Type="System.String" Scope="Application">
       <Value Profile="(Default)">AjaxMin</Value>
@@ -57,10 +51,10 @@
       <Value Profile="(Default)">5.14.5506.26202</Value>
     </Setting>
     <Setting Name="MocaNETWindowsFormProjectVer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">3.0.0</Value>
+      <Value Profile="(Default)">3.3.2</Value>
     </Setting>
     <Setting Name="MocaNETWebFormsProjectVer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">3.0.0</Value>
+      <Value Profile="(Default)">3.1.1</Value>
     </Setting>
     <Setting Name="MocaNETWindowsFormProject" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Moca.NETWindowsFormProject</Value>
