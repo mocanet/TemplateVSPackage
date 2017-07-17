@@ -152,6 +152,7 @@ Public Class EntityWizardForm
             gen.ClassName = Me.txtClassName.Text
             gen.AutoImplementedProperties = Me.chkAutoImplementedProperties.Checked
             gen.INotifyPropertyChangedBase = Me.chkINotifyPropertyChanged.Checked
+            gen.PropertyOrderAttribute = Me.chkPropertyOrderAttribute.Checked
             gen.TableProperty = Me.chkTable.Checked
             gen.DefField = Me.chkDefProp.Checked
             gen.ConnectionSettingsName = Me.txtConnectionSettingsName.Text

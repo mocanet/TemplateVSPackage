@@ -210,9 +210,6 @@
     <Compile Include="WinNuGetPackageWizard.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EntityWizardForm.en.resx">
-      <DependentUpon>EntityWizardForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EntityWizardForm.ja.resx">
       <DependentUpon>EntityWizardForm.vb</DependentUpon>
     </EmbeddedResource>

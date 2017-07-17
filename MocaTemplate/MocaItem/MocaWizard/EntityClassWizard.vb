@@ -60,6 +60,7 @@ Public Class EntityClassWizard
                     Throw New Exception("Not applicable to this language.")
             End Select
 
+            Dim targetFrameworkMoniker As String = project.Properties.Item("TargetFrameworkMoniker").Value
 
             Const C_FILENAME As String = "Moca.config.user"
             Dim configName As String = Path.Combine(Path.GetDirectoryName(project.FullName), C_FILENAME)
@@ -92,6 +93,7 @@ Public Class EntityClassWizard
                 frm.ClassName = className
                 frm.Namespace = classNamespace
                 frm.gen.Language = language
+                frm.gen.TargetFrameworkMoniker = targetFrameworkMoniker
                 If frm.ShowDialog() = System.Windows.Forms.DialogResult.Cancel Then
                     Return
                 End If
