@@ -23,9 +23,9 @@ Partial Class EntityWizardForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EntityWizardForm))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.WizardControl1 = New AeroWizard.WizardControl()
         Me.wzpExecSQL = New AeroWizard.WizardPage()
         Me.cboTable = New System.Windows.Forms.ComboBox()
@@ -35,6 +35,7 @@ Partial Class EntityWizardForm
         Me.cboConnectionStrings = New System.Windows.Forms.ComboBox()
         Me.btnAddDataSource = New System.Windows.Forms.Button()
         Me.wzpGenerateSettings = New AeroWizard.WizardPage()
+        Me.chkEntity = New System.Windows.Forms.CheckBox()
         Me.chkPropertyOrderAttribute = New System.Windows.Forms.CheckBox()
         Me.lblConnectionSettingsName = New System.Windows.Forms.Label()
         Me.txtConnectionSettingsName = New System.Windows.Forms.TextBox()
@@ -57,15 +58,14 @@ Partial Class EntityWizardForm
         '
         'WizardControl1
         '
-        resources.ApplyResources(Me.WizardControl1, "WizardControl1")
         Me.WizardControl1.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.WizardControl1, "WizardControl1")
         Me.WizardControl1.Name = "WizardControl1"
         Me.WizardControl1.Pages.Add(Me.wzpExecSQL)
         Me.WizardControl1.Pages.Add(Me.wzpGenerateSettings)
         '
         'wzpExecSQL
         '
-        resources.ApplyResources(Me.wzpExecSQL, "wzpExecSQL")
         Me.wzpExecSQL.Controls.Add(Me.cboTable)
         Me.wzpExecSQL.Controls.Add(Me.Label4)
         Me.wzpExecSQL.Controls.Add(Me.RichTextBox1)
@@ -74,6 +74,7 @@ Partial Class EntityWizardForm
         Me.wzpExecSQL.Controls.Add(Me.btnAddDataSource)
         Me.wzpExecSQL.Name = "wzpExecSQL"
         Me.wzpExecSQL.NextPage = Me.wzpGenerateSettings
+        resources.ApplyResources(Me.wzpExecSQL, "wzpExecSQL")
         '
         'cboTable
         '
@@ -89,8 +90,8 @@ Partial Class EntityWizardForm
         'RichTextBox1
         '
         Me.RichTextBox1.AcceptsTab = True
-        resources.ApplyResources(Me.RichTextBox1, "RichTextBox1")
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.RichTextBox1, "RichTextBox1")
         Me.RichTextBox1.Name = "RichTextBox1"
         '
         'Label1
@@ -112,7 +113,7 @@ Partial Class EntityWizardForm
         '
         'wzpGenerateSettings
         '
-        resources.ApplyResources(Me.wzpGenerateSettings, "wzpGenerateSettings")
+        Me.wzpGenerateSettings.Controls.Add(Me.chkEntity)
         Me.wzpGenerateSettings.Controls.Add(Me.chkPropertyOrderAttribute)
         Me.wzpGenerateSettings.Controls.Add(Me.lblConnectionSettingsName)
         Me.wzpGenerateSettings.Controls.Add(Me.txtConnectionSettingsName)
@@ -129,6 +130,16 @@ Partial Class EntityWizardForm
         Me.wzpGenerateSettings.Controls.Add(Me.txtNamespace)
         Me.wzpGenerateSettings.IsFinishPage = True
         Me.wzpGenerateSettings.Name = "wzpGenerateSettings"
+        resources.ApplyResources(Me.wzpGenerateSettings, "wzpGenerateSettings")
+        '
+        'chkEntity
+        '
+        resources.ApplyResources(Me.chkEntity, "chkEntity")
+        Me.chkEntity.Checked = True
+        Me.chkEntity.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkEntity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.chkEntity.Name = "chkEntity"
+        Me.chkEntity.UseVisualStyleBackColor = True
         '
         'chkPropertyOrderAttribute
         '
@@ -191,40 +202,40 @@ Partial Class EntityWizardForm
         '
         'txtDefName
         '
-        resources.ApplyResources(Me.txtDefName, "txtDefName")
         Me.txtDefName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        resources.ApplyResources(Me.txtDefName, "txtDefName")
         Me.txtDefName.Name = "txtDefName"
         '
         'DataGridView2
         '
         resources.ApplyResources(Me.DataGridView2, "DataGridView2")
         Me.DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Yu Gothic UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Yu Gothic UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Yu Gothic UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Yu Gothic UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView2.Name = "DataGridView2"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Yu Gothic UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Yu Gothic UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView2.RowTemplate.Height = 21
         '
         'chkDifinition
@@ -286,4 +297,5 @@ Partial Class EntityWizardForm
     Friend WithEvents lblConnectionSettingsName As Windows.Forms.Label
     Friend WithEvents txtConnectionSettingsName As Windows.Forms.TextBox
     Friend WithEvents chkPropertyOrderAttribute As Windows.Forms.CheckBox
+    Friend WithEvents chkEntity As Windows.Forms.CheckBox
 End Class

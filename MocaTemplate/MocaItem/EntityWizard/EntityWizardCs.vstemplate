@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   <TemplateData>
-    <Name>Entity クラス</Name>
-    <Description>Entity クラスの定義です</Description>
+    <Name>Entity クラス、Difinition インタフェース</Name>
+    <Description>Entity クラス、Difinition インタフェースの定義です</Description>
     <Icon>Entity.ico</Icon>
     <TemplateID>DC473711-C1A4-4DA7-8181-F4BE982D0CE1</TemplateID>
     <SortOrder>1000</SortOrder>

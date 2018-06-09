@@ -117,640 +117,673 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WizardControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RichTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 296</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chkDefProp.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;WizardControl1.Name" xml:space="preserve">
-    <value>WizardControl1</value>
-  </data>
-  <data name="wzpGenerateSettings.Text" xml:space="preserve">
-    <value>Generate Settings</value>
-  </data>
-  <data name="lblConnectionSettingsName.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="chkPropertyOrderAttribute.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 207</value>
-  </data>
-  <data name="&gt;&gt;txtNamespace.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTable.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox1.Name" xml:space="preserve">
-    <value>RichTextBox1</value>
-  </data>
-  <data name="&gt;&gt;chkAutoImplementedProperties.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkAutoImplementedProperties.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="WizardControl1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtConnectionSettingsName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="WizardControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="wzpGenerateSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="cboTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
   </data>
-  <data name="chkDefProp.Text" xml:space="preserve">
-    <value>Definition Field</value>
+  <data name="cboTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 46</value>
+  </data>
+  <data name="cboTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cboTable.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cboTable.Name" xml:space="preserve">
+    <value>cboTable</value>
   </data>
   <data name="&gt;&gt;cboTable.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;cboTable.Parent" xml:space="preserve">
+    <value>wzpExecSQL</value>
+  </data>
+  <data name="&gt;&gt;cboTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="Label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 49</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 15</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
   <data name="&gt;&gt;Label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtDefName.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>wzpExecSQL</value>
   </data>
-  <data name="&gt;&gt;btnAddDataSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="txtConnectionSettingsName.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="RichTextBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;DataGridView2.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
+  <data name="RichTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 75</value>
   </data>
-  <data name="&gt;&gt;txtNamespace.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
+  <data name="RichTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 296</value>
   </data>
-  <data name="&gt;&gt;wzpExecSQL.Name" xml:space="preserve">
+  <data name="RichTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;RichTextBox1.Name" xml:space="preserve">
+    <value>RichTextBox1</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.Parent" xml:space="preserve">
+    <value>wzpExecSQL</value>
+  </data>
+  <data name="&gt;&gt;RichTextBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 20</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 15</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Data Connect</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>wzpExecSQL</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cboConnectionStrings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="cboConnectionStrings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="cboConnectionStrings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 23</value>
+  </data>
+  <data name="cboConnectionStrings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboConnectionStrings.Name" xml:space="preserve">
+    <value>cboConnectionStrings</value>
+  </data>
+  <data name="&gt;&gt;cboConnectionStrings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboConnectionStrings.Parent" xml:space="preserve">
     <value>wzpExecSQL</value>
   </data>
   <data name="&gt;&gt;cboConnectionStrings.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="chkDefProp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 147</value>
-  </data>
-  <data name="&gt;&gt;txtClassName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>ClassName</value>
-  </data>
-  <data name="&gt;&gt;txtClassName.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 20</value>
-  </data>
-  <data name="txtDefName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 37</value>
-  </data>
-  <data name="&gt;&gt;chkDefProp.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="chkPropertyOrderAttribute.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="RichTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 75</value>
-  </data>
-  <data name="&gt;&gt;wzpGenerateSettings.Type" xml:space="preserve">
-    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.10.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
-  </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
-  </data>
-  <data name="&gt;&gt;txtConnectionSettingsName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtDefName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="wzpExecSQL.Text" xml:space="preserve">
-    <value>Execute SQL Statment</value>
-  </data>
-  <data name="&gt;&gt;txtDefName.Name" xml:space="preserve">
-    <value>txtDefName</value>
-  </data>
-  <data name="&gt;&gt;WizardControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtConnectionSettingsName.Name" xml:space="preserve">
-    <value>txtConnectionSettingsName</value>
-  </data>
-  <data name="&gt;&gt;lblConnectionSettingsName.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="&gt;&gt;txtNamespace.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtClassName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 96</value>
-  </data>
-  <data name="lblConnectionSettingsName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 15</value>
-  </data>
-  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtConnectionSettingsName.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;chkPropertyOrderAttribute.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtConnectionSettingsName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 96</value>
-  </data>
-  <data name="chkPropertyOrderAttribute.Text" xml:space="preserve">
-    <value>Property Order Attribute</value>
-  </data>
-  <data name="&gt;&gt;chkDifinition.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkDefProp.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAddDataSource.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="chkPropertyOrderAttribute.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
-    <value>Label4</value>
-  </data>
-  <data name="&gt;&gt;cboConnectionStrings.Parent" xml:space="preserve">
-    <value>wzpExecSQL</value>
-  </data>
-  <data name="txtClassName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="cboTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 46</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.Text" xml:space="preserve">
-    <value>INotifyPropertyChanged Implements</value>
-  </data>
-  <data name="WizardControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;chkAutoImplementedProperties.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="&gt;&gt;chkINotifyPropertyChanged.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="chkDifinition.Text" xml:space="preserve">
-    <value>Generate Column Definition</value>
-  </data>
-  <data name="WizardControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;DataGridView2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;chkDifinition.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="DataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 202</value>
-  </data>
-  <data name="&gt;&gt;chkPropertyOrderAttribute.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="&gt;&gt;chkINotifyPropertyChanged.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cboConnectionStrings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
-    <value>Label3</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 15</value>
-  </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkDifinition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 19</value>
-  </data>
-  <data name="WizardControl1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>EntityWizardForm</value>
-  </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;cboConnectionStrings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 177</value>
-  </data>
-  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 78</value>
-  </data>
-  <data name="&gt;&gt;cboConnectionStrings.Name" xml:space="preserve">
-    <value>cboConnectionStrings</value>
-  </data>
-  <data name="lblConnectionSettingsName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 78</value>
-  </data>
-  <data name="&gt;&gt;btnAddDataSource.Name" xml:space="preserve">
-    <value>btnAddDataSource</value>
-  </data>
-  <data name="chkAutoImplementedProperties.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 24</value>
-  </data>
-  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="btnAddDataSource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnAddDataSource.Parent" xml:space="preserve">
-    <value>wzpExecSQL</value>
-  </data>
-  <data name="&gt;&gt;WizardControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtNamespace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 37</value>
-  </data>
-  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;chkPropertyOrderAttribute.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblConnectionSettingsName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtClassName.Name" xml:space="preserve">
-    <value>txtClassName</value>
-  </data>
-  <data name="chkAutoImplementedProperties.Text" xml:space="preserve">
-    <value>Auto-Implemented Properties</value>
-  </data>
-  <data name="Label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 24</value>
-  </data>
-  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 19</value>
-  </data>
-  <data name="&gt;&gt;wzpExecSQL.Type" xml:space="preserve">
-    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.10.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
-  </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
-  </data>
-  <data name="chkDefProp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 24</value>
-  </data>
-  <data name="&gt;&gt;chkINotifyPropertyChanged.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblConnectionSettingsName.Text" xml:space="preserve">
-    <value>Connection string name of setting</value>
-  </data>
-  <data name="&gt;&gt;lblConnectionSettingsName.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cboTable.Name" xml:space="preserve">
-    <value>cboTable</value>
-  </data>
-  <data name="cboTable.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="btnAddDataSource.Location" type="System.Drawing.Point, System.Drawing">
     <value>527, 17</value>
   </data>
-  <data name="chkDifinition.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chkPropertyOrderAttribute.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 374</value>
-  </data>
-  <data name="&gt;&gt;txtConnectionSettingsName.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="chkINotifyPropertyChanged.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 147</value>
-  </data>
-  <data name="cboTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;lblConnectionSettingsName.Name" xml:space="preserve">
-    <value>lblConnectionSettingsName</value>
-  </data>
-  <data name="&gt;&gt;chkDefProp.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="cboConnectionStrings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 17</value>
-  </data>
-  <data name="txtNamespace.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>wzpExecSQL</value>
-  </data>
-  <data name="&gt;&gt;chkDifinition.Name" xml:space="preserve">
-    <value>chkDifinition</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Namespace</value>
-  </data>
-  <data name="&gt;&gt;txtDefName.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="chkDifinition.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;chkTable.Name" xml:space="preserve">
-    <value>chkTable</value>
-  </data>
-  <data name="&gt;&gt;cboTable.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="chkTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>676, 528</value>
-  </data>
-  <data name="WizardControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 528</value>
-  </data>
-  <data name="RichTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="btnAddDataSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="btnAddDataSource.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;txtConnectionSettingsName.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txtClassName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="btnAddDataSource.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>Data Connect</value>
-  </data>
-  <data name="&gt;&gt;txtNamespace.Name" xml:space="preserve">
-    <value>txtNamespace</value>
-  </data>
-  <data name="lblConnectionSettingsName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;chkINotifyPropertyChanged.Name" xml:space="preserve">
-    <value>chkINotifyPropertyChanged</value>
-  </data>
-  <data name="chkPropertyOrderAttribute.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 24</value>
-  </data>
-  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 49</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridView2.Name" xml:space="preserve">
-    <value>DataGridView2</value>
-  </data>
-  <data name="DataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 169</value>
-  </data>
-  <data name="txtDefName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 23</value>
-  </data>
-  <data name="cboTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 23</value>
-  </data>
-  <data name="&gt;&gt;chkDifinition.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="&gt;&gt;wzpGenerateSettings.Name" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RichTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;chkPropertyOrderAttribute.Name" xml:space="preserve">
-    <value>chkPropertyOrderAttribute</value>
-  </data>
   <data name="btnAddDataSource.Text" xml:space="preserve">
     <value>New ...</value>
   </data>
-  <data name="chkDifinition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
+  <data name="&gt;&gt;btnAddDataSource.Name" xml:space="preserve">
+    <value>btnAddDataSource</value>
   </data>
-  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
+  <data name="&gt;&gt;btnAddDataSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cboTable.Parent" xml:space="preserve">
-    <value>wzpExecSQL</value>
-  </data>
-  <data name="chkTable.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;chkTable.Parent" xml:space="preserve">
-    <value>wzpGenerateSettings</value>
-  </data>
-  <data name="&gt;&gt;chkDefProp.Name" xml:space="preserve">
-    <value>chkDefProp</value>
-  </data>
-  <data name="txtNamespace.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 23</value>
-  </data>
-  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cboConnectionStrings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 23</value>
-  </data>
-  <data name="cboConnectionStrings.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Meiryo UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;chkAutoImplementedProperties.Name" xml:space="preserve">
-    <value>chkAutoImplementedProperties</value>
-  </data>
-  <data name="txtConnectionSettingsName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 23</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox1.Parent" xml:space="preserve">
-    <value>wzpExecSQL</value>
-  </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 15</value>
-  </data>
-  <data name="&gt;&gt;RichTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtDefName.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="chkTable.Text" xml:space="preserve">
-    <value>Table Property</value>
-  </data>
-  <data name="DataGridView2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="chkTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 19</value>
-  </data>
-  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 15</value>
-  </data>
-  <data name="chkDifinition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 17</value>
-  </data>
-  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnAddDataSource.Parent" xml:space="preserve">
     <value>wzpExecSQL</value>
   </data>
   <data name="&gt;&gt;btnAddDataSource.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="txtClassName.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;chkAutoImplementedProperties.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Table</value>
-  </data>
-  <data name="&gt;&gt;chkTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridView2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DataGridView2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 15</value>
-  </data>
-  <data name="&gt;&gt;WizardControl1.Type" xml:space="preserve">
-    <value>AeroWizard.WizardControl, AeroWizard, Version=2.1.10.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
-  </data>
-  <data name="WizardControl1.Title" xml:space="preserve">
-    <value>Entity Code Wizard</value>
-  </data>
-  <data name="chkAutoImplementedProperties.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 177</value>
-  </data>
-  <data name="txtNamespace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="chkEntity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="txtClassName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 23</value>
+  <data name="chkEntity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="chkEntity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEntity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 74</value>
+  </data>
+  <data name="chkEntity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 19</value>
+  </data>
+  <data name="chkEntity.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkEntity.Text" xml:space="preserve">
+    <value>Generate Entity Class</value>
+  </data>
+  <data name="&gt;&gt;chkEntity.Name" xml:space="preserve">
+    <value>chkEntity</value>
+  </data>
+  <data name="&gt;&gt;chkEntity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEntity.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;chkEntity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkPropertyOrderAttribute.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="chkPropertyOrderAttribute.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPropertyOrderAttribute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 207</value>
+  </data>
+  <data name="chkPropertyOrderAttribute.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 24</value>
+  </data>
+  <data name="chkPropertyOrderAttribute.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chkPropertyOrderAttribute.Text" xml:space="preserve">
+    <value>Property Order Attribute</value>
+  </data>
+  <data name="&gt;&gt;chkPropertyOrderAttribute.Name" xml:space="preserve">
+    <value>chkPropertyOrderAttribute</value>
+  </data>
+  <data name="&gt;&gt;chkPropertyOrderAttribute.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPropertyOrderAttribute.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;chkPropertyOrderAttribute.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblConnectionSettingsName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblConnectionSettingsName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 78</value>
+  </data>
+  <data name="lblConnectionSettingsName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 15</value>
+  </data>
+  <data name="lblConnectionSettingsName.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblConnectionSettingsName.Text" xml:space="preserve">
+    <value>Connection string name of setting</value>
+  </data>
+  <data name="&gt;&gt;lblConnectionSettingsName.Name" xml:space="preserve">
+    <value>lblConnectionSettingsName</value>
+  </data>
+  <data name="&gt;&gt;lblConnectionSettingsName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblConnectionSettingsName.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;lblConnectionSettingsName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtConnectionSettingsName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtConnectionSettingsName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="txtConnectionSettingsName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 96</value>
+  </data>
+  <data name="txtConnectionSettingsName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 23</value>
+  </data>
+  <data name="txtConnectionSettingsName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtConnectionSettingsName.Name" xml:space="preserve">
+    <value>txtConnectionSettingsName</value>
+  </data>
+  <data name="&gt;&gt;txtConnectionSettingsName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtConnectionSettingsName.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;txtConnectionSettingsName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkDefProp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="chkDefProp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 147</value>
+  </data>
+  <data name="chkDefProp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 24</value>
+  </data>
+  <data name="chkDefProp.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chkDefProp.Text" xml:space="preserve">
+    <value>Definition Field</value>
+  </data>
+  <data name="&gt;&gt;chkDefProp.Name" xml:space="preserve">
+    <value>chkDefProp</value>
   </data>
   <data name="&gt;&gt;chkDefProp.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;chkDefProp.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
   </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="&gt;&gt;chkDefProp.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="chkINotifyPropertyChanged.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;txtClassName.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="chkINotifyPropertyChanged.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 147</value>
   </data>
-  <data name="txtNamespace.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="chkINotifyPropertyChanged.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 24</value>
   </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="chkINotifyPropertyChanged.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;RichTextBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="chkINotifyPropertyChanged.Text" xml:space="preserve">
+    <value>INotifyPropertyChanged Implements</value>
   </data>
-  <data name="WizardControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;chkINotifyPropertyChanged.Name" xml:space="preserve">
+    <value>chkINotifyPropertyChanged</value>
   </data>
-  <data name="chkTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="&gt;&gt;chkINotifyPropertyChanged.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkINotifyPropertyChanged.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;chkINotifyPropertyChanged.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkAutoImplementedProperties.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="chkAutoImplementedProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 177</value>
+  </data>
+  <data name="chkAutoImplementedProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 24</value>
+  </data>
+  <data name="chkAutoImplementedProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkAutoImplementedProperties.Text" xml:space="preserve">
+    <value>Auto-Implemented Properties</value>
+  </data>
+  <data name="&gt;&gt;chkAutoImplementedProperties.Name" xml:space="preserve">
+    <value>chkAutoImplementedProperties</value>
+  </data>
+  <data name="&gt;&gt;chkAutoImplementedProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAutoImplementedProperties.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;chkAutoImplementedProperties.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>629, 374</value>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 78</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 15</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="chkAutoImplementedProperties.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>ClassName</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtClassName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtClassName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="txtClassName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 96</value>
+  </data>
+  <data name="txtClassName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 23</value>
+  </data>
+  <data name="txtClassName.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtClassName.Name" xml:space="preserve">
+    <value>txtClassName</value>
+  </data>
+  <data name="&gt;&gt;txtClassName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtClassName.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;txtClassName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chkTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="chkTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 177</value>
+  </data>
+  <data name="chkTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 19</value>
+  </data>
+  <data name="chkTable.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkTable.Text" xml:space="preserve">
+    <value>Table Property</value>
+  </data>
+  <data name="&gt;&gt;chkTable.Name" xml:space="preserve">
+    <value>chkTable</value>
+  </data>
+  <data name="&gt;&gt;chkTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTable.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;chkTable.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtDefName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 37</value>
+  </data>
+  <data name="txtDefName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 23</value>
+  </data>
+  <data name="txtDefName.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtDefName.Name" xml:space="preserve">
+    <value>txtDefName</value>
+  </data>
+  <data name="&gt;&gt;txtDefName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDefName.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;txtDefName.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="DataGridView2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="DataGridView2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 202</value>
+  </data>
+  <data name="DataGridView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 169</value>
+  </data>
+  <data name="DataGridView2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;DataGridView2.Name" xml:space="preserve">
+    <value>DataGridView2</value>
+  </data>
+  <data name="&gt;&gt;DataGridView2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridView2.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;DataGridView2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkDifinition.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chkDifinition.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="chkDifinition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 17</value>
+  </data>
+  <data name="chkDifinition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 19</value>
+  </data>
+  <data name="chkDifinition.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkDifinition.Text" xml:space="preserve">
+    <value>Generate Column Definition</value>
+  </data>
+  <data name="&gt;&gt;chkDifinition.Name" xml:space="preserve">
+    <value>chkDifinition</value>
+  </data>
+  <data name="&gt;&gt;chkDifinition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDifinition.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;chkDifinition.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 19</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 15</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Namespace</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtNamespace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtNamespace.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
+  <data name="txtNamespace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 37</value>
+  </data>
+  <data name="txtNamespace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 23</value>
+  </data>
+  <data name="txtNamespace.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNamespace.Name" xml:space="preserve">
+    <value>txtNamespace</value>
+  </data>
+  <data name="&gt;&gt;txtNamespace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNamespace.Parent" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;txtNamespace.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="wzpGenerateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 374</value>
+  </data>
+  <data name="wzpGenerateSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wzpGenerateSettings.Text" xml:space="preserve">
+    <value>Generate Settings</value>
+  </data>
+  <data name="&gt;&gt;wzpGenerateSettings.Name" xml:space="preserve">
+    <value>wzpGenerateSettings</value>
+  </data>
+  <data name="&gt;&gt;wzpGenerateSettings.Type" xml:space="preserve">
+    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.10.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+  </data>
+  <data name="wzpExecSQL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 374</value>
   </data>
   <data name="wzpExecSQL.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wzpExecSQL.Text" xml:space="preserve">
+    <value>Execute SQL Statment</value>
+  </data>
+  <data name="&gt;&gt;wzpExecSQL.Name" xml:space="preserve">
+    <value>wzpExecSQL</value>
+  </data>
+  <data name="&gt;&gt;wzpExecSQL.Type" xml:space="preserve">
+    <value>AeroWizard.WizardPage, AeroWizard, Version=2.1.10.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+  </data>
+  <data name="WizardControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 528</value>
+  </data>
+  <data name="WizardControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="WizardControl1.Title" xml:space="preserve">
+    <value>Entity Code Wizard</value>
+  </data>
+  <data name="&gt;&gt;WizardControl1.Name" xml:space="preserve">
+    <value>WizardControl1</value>
+  </data>
+  <data name="&gt;&gt;WizardControl1.Type" xml:space="preserve">
+    <value>AeroWizard.WizardControl, AeroWizard, Version=2.1.10.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37</value>
+  </data>
+  <data name="&gt;&gt;WizardControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;WizardControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>676, 528</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EntityWizardForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

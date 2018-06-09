@@ -29,6 +29,8 @@ Public Class EntityCodeGenerator
 
     Private _dump As CodeDomProvider
 
+    Private _isGenerateDifinitionOnly As Boolean
+
 #End Region
 
 #Region " コンストラクタ "
@@ -139,7 +141,13 @@ Public Class EntityCodeGenerator
             System.IO.Directory.CreateDirectory(path)
         End If
 
-        Dim filename As String = System.IO.Path.Combine(path, Me._className & "." & _dump.FileExtension)
+        Dim filename As String
+        If _isGenerateDifinitionOnly Then
+            filename = System.IO.Path.Combine(path, Me.DefinitionName & "." & _dump.FileExtension)
+        Else
+            filename = System.IO.Path.Combine(path, Me._className & "." & _dump.FileExtension)
+        End If
+
         Using writer As StreamWriter = New StreamWriter(filename, False)
             Using tw As New IndentedTextWriter(writer)
                 _dump.GenerateCodeFromCompileUnit(_compileUnit, tw, opt)
@@ -157,6 +165,8 @@ Public Class EntityCodeGenerator
     ''' <remarks></remarks>
     Public Sub Generate(ByVal columns As DataColumnCollection, Optional ByVal difinition As DataRowCollection = Nothing)
         Dim cn As CodeNamespace = New CodeNamespace(_namespace)
+
+        _isGenerateDifinitionOnly = False
 
         ' Imports 定義
         cn.Imports.Add(New CodeNamespaceImport("Moca.Db"))
@@ -235,6 +245,33 @@ Public Class EntityCodeGenerator
         End If
 
         ' 以降はテーブル定義作成
+        class1 = _createInterface(_defName)
+        cn.Types.Add(class1)
+
+        class1.StartDirectives.Add(_createRegionStart("Definition"))
+        class1.EndDirectives.Add(_createRegionEnd())
+        _createDifinition(class1, difinition)
+    End Sub
+
+    ''' <summary>
+    ''' コード作成(テーブル定義のみ作成)
+    ''' </summary>
+    ''' <param name="columns"></param>
+    ''' <param name="difinition"></param>
+    Public Sub GenerateDifinition(ByVal columns As DataColumnCollection, ByVal difinition As DataRowCollection)
+        Dim cn As CodeNamespace = New CodeNamespace(_namespace)
+        Dim class1 As CodeTypeDeclaration
+
+        _isGenerateDifinitionOnly = True
+
+        ' Imports 定義
+        cn.Imports.Add(New CodeNamespaceImport("Moca.Db"))
+        cn.Imports.Add(New CodeNamespaceImport("Moca.Db.Attr"))
+
+        ' 準備
+        _compileUnit.Namespaces.Add(cn)
+        _compileUnit.UserData.Clear()
+
         class1 = _createInterface(_defName)
         cn.Types.Add(class1)
 

@@ -63,76 +63,122 @@ Option Explicit On
 
 Imports Moca.Db
 Imports Moca.Db.Attr
+Imports Moca.Win
 Imports System.ComponentModel
+Imports System.Runtime.CompilerServices
 
-
-''' <summary> 
-''' EntityClass1 エンティティ 
-''' </summary> 
-''' <remarks></remarks> 
-''' <history> 
-''' </history> 
-Public Class EntityClass1
-    Implements System.ComponentModel.INotifyPropertyChanged
+Namespace Models
     
-    #Region " Declare "
-    Private _id As Integer
+    ''' <summary> 
+    ''' EntityClass1 Entity 
+    ''' </summary> 
+    ''' <remarks></remarks> 
+    ''' <history> 
+    ''' </history> 
+    Public Class EntityClass1
+        Implements System.ComponentModel.INotifyPropertyChanged
+        
+        #Region " Declare "
+        Shared _def As IEntityClass1Definition
+        
+        Private _id As Integer
+        
+        Private _name As String
+        
+        Private _note As String
+        #End Region
+        
+        #Region " Property "
+        ''' <summary> 
+        ''' Id (Id) Property. 
+        ''' </summary> 
+        <Column("Id"),  _
+         PropertyOrder(1)>  _
+        Public Property Id() As Integer
+            Get
+                Return Me._id
+            End Get
+            Set
+                Me._id = value
+                OnPropertyChanged()
+            End Set
+        End Property
+        
+        ''' <summary> 
+        ''' Name (Name) Property. 
+        ''' </summary> 
+        <Column("Name"),  _
+         PropertyOrder(2)>  _
+        Public Property Name() As String
+            Get
+                Return Me._name
+            End Get
+            Set
+                Me._name = value
+                OnPropertyChanged()
+            End Set
+        End Property
+        
+        ''' <summary> 
+        ''' Note (Note) Property. 
+        ''' </summary> 
+        <Column("Note"),  _
+         PropertyOrder(3)>  _
+        Public Property Note() As String
+            Get
+                Return Me._note
+            End Get
+            Set
+                Me._note = value
+                OnPropertyChanged()
+            End Set
+        End Property
+        #End Region
+        
+        #Region " PropertyChanged "
+        Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+        
+        Protected Overridable Sub OnPropertyChanged(<CallerMemberName()> ByVal optional name As String = Nothing)
+            RaiseEvent PropertyChanged(Me, New System.ComponentModel.PropertyChangedEventArgs(name))
+        End Sub
+        #End Region
+    End Class
     
-    Private _note As String
-    
-    Private _name As String
+    #Region " Definition "
+    ''' <summary> 
+    ''' EntityClass1 Entity definition 
+    ''' </summary> 
+    ''' <remarks></remarks> 
+    ''' <history> 
+    ''' </history> 
+    <Table(Sys.ConnectionStringName, "trnTable")>  _
+    Public Interface IEntityClass1Definition
+        
+        ''' <summary> 
+        ''' Table (Table) Property. 
+        ''' </summary> 
+        Property Table() As Moca.Db.DbInfoTable
+        
+        ''' <summary> 
+        ''' Id (Id) Property. 
+        ''' </summary> 
+        <Column("Id")>  _
+        Property Id() As Moca.Db.DbInfoColumn
+        
+        ''' <summary> 
+        ''' Name (Name) Property. 
+        ''' </summary> 
+        <Column("Name")>  _
+        Property Name() As Moca.Db.DbInfoColumn
+        
+        ''' <summary> 
+        ''' Note (Note) Property. 
+        ''' </summary> 
+        <Column("Note")>  _
+        Property Note() As Moca.Db.DbInfoColumn
+    End Interface
     #End Region
-    
-    #Region " Property "
-    ''' <summary> 
-    ''' Id (Id) Property. 
-    ''' </summary> 
-    <Column("Id")>  _
-    Public Property Id() As Integer
-        Get
-            Return Me._id
-        End Get
-        Set
-            Me._id = value
-            OnPropertyChanged("Id")
-        End Set
-    End Property
-    
-    ''' <summary> 
-    ''' Note (Note) Property. 
-    ''' </summary> 
-    <Column("Note")>  _
-    Public Property Note() As String
-        Get
-            Return Me._note
-        End Get
-        Set
-            Me._note = value
-            OnPropertyChanged("Note")
-        End Set
-    End Property
-    
-    ''' <summary> 
-    ''' Name (Name) Property. 
-    ''' </summary> 
-    <Column("Name")>  _
-    Public Property Name() As String
-        Get
-            Return Me._name
-        End Get
-        Set
-            Me._name = value
-            OnPropertyChanged("Name")
-        End Set
-    End Property
-    #End Region
-    
-    Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-    
-    Protected Overridable Sub OnPropertyChanged(ByVal name As String)
-        RaiseEvent PropertyChanged(Me, New System.ComponentModel.PropertyChangedEventArgs(name))
-    End Sub
-End Class
+End Namespace
 ```
 
 

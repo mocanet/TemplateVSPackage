@@ -234,6 +234,12 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>
+  <data name="chkEntity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 69</value>
+  </data>
+  <data name="chkEntity.Text" xml:space="preserve">
+    <value>エンティティクラス作成</value>
+  </data>
   <data name="chkPropertyOrderAttribute.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 199</value>
   </data>

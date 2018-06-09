@@ -128,6 +128,12 @@ Public Class EntityWizardForm
     End Sub
 
     Private Sub wzpGenerateSettings_Commit(sender As Object, e As AeroWizard.WizardPageConfirmEventArgs) Handles wzpGenerateSettings.Commit
+        If Not Me.chkEntity.Checked AndAlso Not chkDefProp.Checked Then
+            System.Windows.Forms.MessageBox.Show("Please check either entity or definition")
+            chkEntity.Focus()
+            e.Cancel = True
+            Return
+        End If
         If Me.txtClassName.Text.Length = 0 Then
             System.Windows.Forms.MessageBox.Show("Input Class Name")
             Me.txtClassName.Focus()
@@ -159,7 +165,12 @@ Public Class EntityWizardForm
             If Me.chkDifinition.Checked Then
                 gen.DefName = Me.txtDefName.Text
                 gen.TableName = Me.cboTable.Text
-                gen.Generate(_dt.Columns, dt.Rows)
+                If chkEntity.Checked Then
+                    gen.Generate(_dt.Columns, dt.Rows)
+                Else
+                    gen.ClassName = Me.txtDefName.Text
+                    gen.GenerateDifinition(_dt.Columns, dt.Rows)
+                End If
             Else
                 gen.Generate(_dt.Columns)
             End If
@@ -173,8 +184,19 @@ Public Class EntityWizardForm
         chkAutoImplementedProperties.Enabled = Not chkINotifyPropertyChanged.Checked
     End Sub
 
+    Private Sub chkEntity_CheckedChanged(sender As Object, e As EventArgs) Handles chkEntity.CheckedChanged
+        _setEntity(chkEntity.Checked)
+    End Sub
+
     Private Sub chkDifinition_CheckedChanged(sender As Object, e As EventArgs) Handles chkDifinition.CheckedChanged
         _setDef(chkDifinition.Checked)
+    End Sub
+
+    Private Sub _setEntity(ByVal value As Boolean)
+        txtClassName.Visible = value
+        chkINotifyPropertyChanged.Visible = value
+        chkAutoImplementedProperties.Visible = value
+        chkPropertyOrderAttribute.Visible = value
     End Sub
 
     Private Sub _setDef(ByVal value As Boolean)

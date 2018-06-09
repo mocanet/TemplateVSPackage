@@ -1,59 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="MocaTemplate.MiYABiS.8f23ff00-7d14-4c97-9366-3f0d92fae82b" Version="3.7.0" Language="en-US" Publisher="MiYABiS" />
-    <DisplayName>Moca.NET Template 3.0</DisplayName>
-    <Description xml:space="preserve">Moca.NET framework Templates.</Description>
-    <MoreInfo>http://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290</MoreInfo>
-    <License>License.txt</License>
-    <ReleaseNotes>ReleaseNote.rtf</ReleaseNotes>
-    <Icon>MocaNET32.png</Icon>
-    <PreviewImage>MocaNET.png</PreviewImage>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Pro" />
-    <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Community" />
-    <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Enterprise" />
-    <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VWDExpress" />
-    <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
-    <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
-  </Installation>
-  <Dependencies>
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" Path="|MocaWizard|" AssemblyName="|MocaWizard;AssemblyName|" d:ProjectName="MocaWizard" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
-    <!--
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\VisualBasic\Moca.NET\MocaWebApplication35.zip" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\VisualBasic\Moca.NET\MocaWindowsApplication.zip" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\VisualBasic\Moca.NET\MocaWindowsApplication35.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\CssAjaxMin.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\EntityWizard.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\ICookie.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\ISession.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\JsAjaxMin.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\MethodInterceptor.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\MocaItem.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\MocaMasterPage.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\MocaWebApiController.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\MocaWebForm.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\MocaWebUserControl.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\VisualBasic\Moca.NET\SQLStatementlogger.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\EntityWizardCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\ICookieCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\ISessionCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\MethodInterceptorCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\MocaItemCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\MocaMasterPageCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\MocaWebApiControllerCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\MocaWebFormCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\MocaWebUserControlCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\Moca.NET\SQLStatementloggerCs.zip" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:TargetPath="|MocaWebApplication;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-    -->
-  </Assets>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.26208.0,16.0)" DisplayName="C# および Visual Basic" />
-  </Prerequisites>
+    <Metadata>
+        <Identity Id="MocaTemplate.MiYABiS.8f23ff00-7d14-4c97-9366-3f0d92fae82b" Version="3.8.0" Language="en-US" Publisher="MiYABiS" />
+        <DisplayName>Moca.NET Template 3.0</DisplayName>
+        <Description xml:space="preserve">Moca.NET framework Templates.</Description>
+        <MoreInfo>http://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290</MoreInfo>
+        <License>License.txt</License>
+        <ReleaseNotes>ReleaseNote.rtf</ReleaseNotes>
+        <Icon>MocaNET50.png</Icon>
+        <PreviewImage>MocaNET.png</PreviewImage>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Enterprise" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+    </Installation>
+    <Dependencies>
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" Path="|MocaWizard|" AssemblyName="|MocaWizard;AssemblyName|" d:ProjectName="MocaWizard" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.26208.0,16.0)" DisplayName="C# および Visual Basic" />
+    </Prerequisites>
 </PackageManifest>
