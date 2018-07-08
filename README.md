@@ -2,17 +2,20 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1s0gom7tl6yldrgq?svg=true)](https://ci.appveyor.com/project/miyabis/templatevspackage)
 [![Build status](https://ci.appveyor.com/api/projects/status/nhhpxdnm7n7crsfh?svg=true)](https://ci.appveyor.com/project/miyabis/templatevspackage-qdu06)
+[![license](https://img.shields.io/badge/License-MS--PL-blue.svg)](https://opensource.org/licenses/MS-PL)
+
+## Overview
 
 Moca.NET framework Templates.
 
-**Project Templates** (Only supports VB.NET code)
+### Project Templates (Only supports VB.NET code)
 
 * Moca.NET Windows Forms application 
 * Moca.NET Web application 
 
-**Item Template** (supports VB.NET and C# code)
+### Item Template (supports VB.NET and C# code)
 
-for Moca.NET
+**for Moca.NET**
 
 * Dao class template 
 * Entity Wizard 
@@ -25,27 +28,25 @@ for Moca.NET
 * IMethodInterceptor implements class template 
 * SQL statements Interceptor implements class template 
 
-for Selenium
+**for Selenium**
 
 * Selenium Test Class
 * Selenium Test Page Class
 * Selenium Test PageObject Class Wizard
 
 
-How to get
-==========
+## How to get
 
 vs2012 or later : [Moca.NET Template 3.0](https://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290)  
 vs2010 : [Moca.NET Templates 2010](https://visualstudiogallery.msdn.microsoft.com/f97a7486-560b-425a-aa05-528dd397f5ba)
 
 
-Entity Wizard 
-=======
+## Entity Wizard 
 
 It's the wizard into which a used entity class is formed from a SQL statement to use Moca.NET.
 
-![EntityCodeWizard-00](Images/EntityCodeWizard-00.png "wizard")
-![EntityCodeWizard-01](Images/EntityCodeWizard-01.png "wizard")
+![EntityCodeWizard-00](Images/EntityCodeWizard-00.png)  
+![EntityCodeWizard-01](Images/EntityCodeWizard-01.png)
 
 ```vb
 '------------------------------------------------------------------------------
@@ -182,12 +183,11 @@ End Namespace
 ```
 
 
-Selenium Test PageObject Class Wizard
-=======
+## Selenium Test PageObject Class Wizard
 
 Wizards which makes a PageObject class of selenium from a Web page.
 
-![PageObjectWizard](Images/SeleniumPageObjectWizard.png "wizard")
+![PageObjectWizard](Images/SeleniumPageObjectWizard.png)
 
 ```vb
 '------------------------------------------------------------------------------
@@ -274,8 +274,30 @@ End Class
 ```
 
 
-License
-=======
+## Other Libraries
+
+[Moca.NET Organization](https://github.com/mocanet)
+
+## Visual Studio Extensions
+
+* [Moca.NET Template Extension](https://marketplace.visualstudio.com/items?itemName=MiYABiS.MocaNETTemplate30)
+* [Moca.NET Snippets Extension](https://marketplace.visualstudio.com/items?itemName=MiYABiS.MocaNETCodeSnippet)
+
+## Sample
+
+* Web Form Application  
+  * http://miyabis.github.io/Moca.NET-WebAppDemo/  
+  * https://code.msdn.microsoft.com/vstudio/MocaNET-Framework-Web-0e8d6dd7
+
+* Windows Form Application  
+  * http://miyabis.github.io/Moca.NET-WinAppDemo/  
+  * https://code.msdn.microsoft.com/vstudio/MocaNET-Framework-Windows-7174d250
+
+## For Development
+
+* Visual Studio 2017
+
+## License
 
 Microsoft Public License (MS-PL)
 
