@@ -1,7 +1,8 @@
-﻿# TemplateVSPackage
+﻿# Moca.NET Template Extension for Visual Studio
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1s0gom7tl6yldrgq?svg=true)](https://ci.appveyor.com/project/miyabis/templatevspackage)
 [![Build status](https://ci.appveyor.com/api/projects/status/nhhpxdnm7n7crsfh?svg=true)](https://ci.appveyor.com/project/miyabis/templatevspackage-qdu06)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/MiYABiS.MocaNETTemplate30.svg)
 [![license](https://img.shields.io/badge/License-MS--PL-blue.svg)](https://opensource.org/licenses/MS-PL)
 
 ## Overview
@@ -37,8 +38,8 @@ Moca.NET framework Templates.
 
 ## How to get
 
-vs2012 or later : [Moca.NET Template 3.0](https://visualstudiogallery.msdn.microsoft.com/7735e52f-74f2-4ac7-8172-11cde77e6290)  
-vs2010 : [Moca.NET Templates 2010](https://visualstudiogallery.msdn.microsoft.com/f97a7486-560b-425a-aa05-528dd397f5ba)
+vs2012 or later : [Moca.NET Template 3.0](https://marketplace.visualstudio.com/items?itemName=MiYABiS.MocaNETTemplate30)  
+vs2010 : [Moca.NET Templates 2010](https://marketplace.visualstudio.com/items?itemName=MiYABiS.MocaNETTemplates2010)
 
 
 ## Entity Wizard 
@@ -274,7 +275,7 @@ End Class
 ```
 
 
-## Other Libraries
+## Moca.NET Libraries
 
 [Moca.NET Organization](https://github.com/mocanet)
 
@@ -295,7 +296,7 @@ End Class
 
 ## For Development
 
-* Visual Studio 2017
+* Visual Studio 2019
 
 ## License
 

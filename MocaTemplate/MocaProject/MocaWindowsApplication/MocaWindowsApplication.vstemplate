@@ -10,10 +10,14 @@
 		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
 		<CreateNewFolder>true</CreateNewFolder>
 		<ProvideDefaultName>true</ProvideDefaultName>
-		<DefaultName>MocaWindowsApplication</DefaultName>
+		<DefaultName>MocaWindowsApp</DefaultName>
 		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
 		<PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Tags>VisualBasic; Windows;</Tags>
+    <LanguageTag>VisualBasic</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Desktop</ProjectTypeTag>
   </TemplateData>
 	<TemplateContent>
 		<Project File="ProjectTemplate.vbproj" ReplaceParameters="true">

@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   <TemplateData>
-    <Name>Moca.NET Windows Form Application</Name>
+    <Name>Moca.NET Windows Form Application 3.5</Name>
     <Description>Moca.NET Windows Form Application</Description>
     <Icon>MocaWindowsApplication35.ico</Icon>
     <ProjectType>VisualBasic</ProjectType>
@@ -10,11 +10,15 @@
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <CreateNewFolder>true</CreateNewFolder>
     <ProvideDefaultName>true</ProvideDefaultName>
-    <DefaultName>MocaWindowsApplication</DefaultName>
+    <DefaultName>MocaWindowsApp</DefaultName>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <MaxFrameworkVersion>3.5</MaxFrameworkVersion>
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Tags>VisualBasic; Windows;</Tags>
+    <LanguageTag>VisualBasic</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Desktop</ProjectTypeTag>
   </TemplateData>
   <TemplateContent>
     <Project File="ProjectTemplate.vbproj" ReplaceParameters="true">

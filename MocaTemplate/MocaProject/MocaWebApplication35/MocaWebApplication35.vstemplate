@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
 	<TemplateData>
-		<Name>Moca.NET Web Application</Name>
+		<Name>Moca.NET Web Application 3.5</Name>
 		<Description>Moca.NET Web Application</Description>
 		<Icon>MocaWebApplication35.ico</Icon>
 		<ProjectType>VisualBasic</ProjectType>
@@ -15,6 +15,10 @@
 		<MaxFrameworkVersion>3.5</MaxFrameworkVersion>
 		<PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Tags>VisualBasic; Windows;</Tags>
+    <LanguageTag>VisualBasic</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Web</ProjectTypeTag>
   </TemplateData>
 	<TemplateContent>
 		<Project File="ProjectTemplate.vbproj" ReplaceParameters="true">
