@@ -73,15 +73,15 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AeroWizard, Version=2.2.3.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\AeroWizard.2.2.3\lib\net45\AeroWizard.dll</HintPath>
+    <Reference Include="AeroWizard, Version=2.2.9.0, Culture=neutral, PublicKeyToken=915e74f5d64b8f37, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\AeroWizard.2.2.9\lib\net45\AeroWizard.dll</HintPath>
     </Reference>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <Private>False</Private>
     </Reference>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.ComponentModelHost, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Data, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -154,8 +154,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
