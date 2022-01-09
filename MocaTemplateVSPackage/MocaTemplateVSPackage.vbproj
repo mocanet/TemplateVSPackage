@@ -28,6 +28,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <UseCodebase>true</UseCodebase>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -57,11 +58,11 @@
     <AssemblyName>MocaTemplateVSPackage</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
-    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
     <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
-    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
-    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>

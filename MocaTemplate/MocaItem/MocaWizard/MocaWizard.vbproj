@@ -143,7 +143,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Moca, Version=5.0.0.0, Culture=neutral, PublicKeyToken=42f7e4f7232a6bf5, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Moca.NETCore.3.0.0-beta09\lib\net462\Moca.dll</HintPath>
+      <HintPath>..\..\..\packages\Moca.NETCore.3.0.0-beta10\lib\net462\Moca.dll</HintPath>
     </Reference>
     <Reference Include="NuGet.VisualStudio, Version=2.8.60717.93, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86">
       <HintPath>..\..\..\packages\NuGet.VisualStudio.2.8.6\lib\net45\NuGet.VisualStudio.dll</HintPath>
@@ -253,12 +253,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>このプロジェクトは、このコンピューターにはない NuGet パッケージを参照しています。これらをダウンロードするには、NuGet パッケージの復元を有効にしてください。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。不足しているファイルは {0} です。</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
